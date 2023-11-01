@@ -9,9 +9,15 @@ import { PopularSectionComponent } from './shared/popular-section/popular-sectio
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingComponent } from './components/landing/landing.component';
-import { ViewBooksComponent } from './components/home/view-books/view-books.component';
 import { LoginComponent } from './components/landing/login/login.component';
 import { RegisterComponent } from './components/landing/register/register.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { EditBookComponent } from './components/admin/edit-book/edit-book.component';
+import { AddBookComponent } from './components/admin/add-book/add-book.component';
+import { ViewBookComponent } from './shared/view-book/view-book.component';
+import { ViewUserComponent } from './components/admin/view-user/view-user.component';
+import { AddUserComponent } from './components/admin/add-user/add-user.component';
+
 
 @NgModule({
   declarations: [
@@ -23,9 +29,14 @@ import { RegisterComponent } from './components/landing/register/register.compon
     NavBarComponent,
     HomeComponent,
     LandingComponent,
-    ViewBooksComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminComponent,
+    EditBookComponent,
+    AddBookComponent,
+    ViewBookComponent,
+    ViewUserComponent,
+    AddUserComponent,
   ],
   imports: [
     BrowserModule,
