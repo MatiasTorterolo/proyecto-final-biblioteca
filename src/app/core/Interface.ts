@@ -3,7 +3,7 @@ export interface ILibros{
     id: number | null;
     nombre: string;
     autor: string;
-    año: number;
+    year: number;
     genero: string;
     descripcion: string;
 }
@@ -14,6 +14,6 @@ export interface IUsuarios{
     nombre: string;
     apellido: string;
     email: string;
-    contraseña: string;
+    password: string;
     tipoDeCuenta: string;
 }

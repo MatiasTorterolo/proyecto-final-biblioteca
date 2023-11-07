@@ -1,7 +1,7 @@
 {
   "libros" : [
     {
-      "Id": "1",
+      "id": "1",
       "Nombre": "The Catcher in the Rye",
       "Autor": "J.D. Salinger",
       "Año": 1951,
@@ -9,7 +9,7 @@
       "Descripcion": "La historia de Holden Caulfield, un adolescente que se encuentra en un punto de transición entre la niñez y la adultez."
     },
     {
-      "Id": "2",
+      "id": "2",
       "Nombre": "To Kill a Mockingbird",
       "Autor": "Harper Lee",
       "Año": 1960,
@@ -160,160 +160,160 @@
         "Id": "1",
         "Nombre": "John",
         "Apellido": "Doe",
-        "Email": "johndoe@example.com",
-        "Contraseña": "password123",
+        "email": "johndoe@example.com",
+        "password": "password123",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "2",
         "Nombre": "Jane",
         "Apellido": "Smith",
-        "Email": "janesmith@example.com",
-        "Contraseña": "qwerty",
+        "email": "janesmith@example.com",
+        "password": "qwerty",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "3",
         "Nombre": "Robert",
         "Apellido": "Johnson",
-        "Email": "robertjohnson@example.com",
-        "Contraseña": "abc123",
+        "email": "robertjohnson@example.com",
+        "password": "abc123",
         "Tipo de cuenta": "Admin"
       },
       {
         "Id": "4",
         "Nombre": "Emily",
         "Apellido": "Davis",
-        "Email": "emilydavis@example.com",
-        "Contraseña": "password456",
+        "email": "emilydavis@example.com",
+        "password": "password456",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "5",
         "Nombre": "Michael",
         "Apellido": "Wilson",
-        "Email": "michaelwilson@example.com",
-        "Contraseña": "123456",
+        "email": "michaelwilson@example.com",
+        "password": "123456",
         "Tipo de cuenta": "Admin"
       },
       {
         "Id": "6",
         "Nombre": "Jessica",
         "Apellido": "Taylor",
-        "Email": "jessicataylor@example.com",
-        "Contraseña": "iloveyou",
+        "email": "jessicataylor@example.com",
+        "password": "iloveyou",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "7",
         "Nombre": "David",
         "Apellido": "Anderson",
-        "Email": "davidanderson@example.com",
-        "Contraseña": "qwerty123",
+        "email": "davidanderson@example.com",
+        "password": "qwerty123",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "8",
         "Nombre": "Sarah",
         "Apellido": "Thomas",
-        "Email": "sarahthomas@example.com",
-        "Contraseña": "password789",
+        "email": "sarahthomas@example.com",
+        "password": "password789",
         "Tipo de cuenta": "Admin"
       },
       {
         "Id": "9",
         "Nombre": "Christopher",
         "Apellido": "Jackson",
-        "Email": "christopherjackson@example.com",
-        "Contraseña": "abcxyz",
+        "email": "christopherjackson@example.com",
+        "password": "abcxyz",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "10",
         "Nombre": "Olivia",
         "Apellido": "White",
-        "Email": "oliviawhite@example.com",
-        "Contraseña": "letmein",
+        "email": "oliviawhite@example.com",
+        "password": "letmein",
         "Tipo de cuenta": "Admin"
       },
       {
         "Id": "11",
         "Nombre": "Daniel",
         "Apellido": "Harris",
-        "Email": "danielharris@example.com",
-        "Contraseña": "password1",
+        "email": "danielharris@example.com",
+        "password": "password1",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "12",
         "Nombre": "Sophia",
         "Apellido": "Martin",
-        "Email": "sophiamartin@example.com",
-        "Contraseña": "123abc",
+        "email": "sophiamartin@example.com",
+        "password": "123abc",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "13",
         "Nombre": "Matthew",
         "Apellido": "Thompson",
-        "Email": "matthewthompson@example.com",
-        "Contraseña": "qazwsx",
+        "email": "matthewthompson@example.com",
+        "password": "qazwsx",
         "Tipo de cuenta": "Admin"
       },
       {
         "Id": "14",
         "Nombre": "Ava",
         "Apellido": "Garcia",
-        "Email": "avagarcia@example.com",
-        "Contraseña": "pass123",
+        "email": "avagarcia@example.com",
+        "password": "pass123",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "15",
         "Nombre": "Andrew",
         "Apellido": "Lee",
-        "Email": "andrewlee@example.com",
-        "Contraseña": "987654",
+        "email": "andrewlee@example.com",
+        "password": "987654",
         "Tipo de cuenta": "Admin"
       },
       {
         "Id": "16",
         "Nombre": "Isabella",
         "Apellido": "Clark",
-        "Email": "isabellaclark@example.com",
-        "Contraseña": "hello123",
+        "email": "isabellaclark@example.com",
+        "password": "hello123",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "17",
         "Nombre": "Ethan",
         "Apellido": "Rodriguez",
-        "Email": "ethanrodriguez@example.com",
-        "Contraseña": "qwertyuiop",
+        "email": "ethanrodriguez@example.com",
+        "password": "qwertyuiop",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "18",
         "Nombre": "Mia",
         "Apellido": "Lopez",
-        "Email": "mialopez@example.com",
-        "Contraseña": "ilovemusic",
+        "email": "mialopez@example.com",
+        "password": "ilovemusic",
         "Tipo de cuenta": "Admin"
       },
       {
         "Id": "19",
         "Nombre": "James",
         "Apellido": "Hall",
-        "Email": "jameshall@example.com",
-        "Contraseña": "password2",
+        "email": "jameshall@example.com",
+        "password": "password2",
         "Tipo de cuenta": "Usuario"
       },
       {
         "Id": "20",
         "Nombre": "Charlotte",
         "Apellido": "Young",
-        "Email": "charlotteyoung@example.com",
-        "Contraseña": "zxcvbnm",
+        "email": "charlotteyoung@example.com",
+        "password": "zxcvbnm",
         "Tipo de cuenta": "Admin"
       }
     ]

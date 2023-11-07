@@ -5,7 +5,7 @@ export class Usuario implements IUsuarios{
         nombre: string = '';
         apellido: string = '';
         email: string = '';
-        contraseña: string = '';
+        password: string = '';
         tipoDeCuenta: string = '';
 
     constructor (usuario ? : any){
@@ -14,7 +14,7 @@ export class Usuario implements IUsuarios{
         this.nombre = usuario == undefined ? null : usuario.nombre;
         this.apellido = usuario == undefined ? null : usuario.apellido;
         this.email = usuario == undefined ? null : usuario.email;
-        this.contraseña = usuario == undefined ? null : usuario.contraseña;
+        this.password = usuario == undefined ? null : usuario.password;
         this.tipoDeCuenta = usuario == undefined ? null : usuario.tipoDeCuenta;
     } 
 }
@@ -24,7 +24,7 @@ export class Libro implements ILibros{
     id: number | null = null;
     nombre: string = '';
     autor: string = '';
-    año: number = 0;
+    year: number = 0;
     genero: string = '';
     descripcion: string = '';
 
@@ -33,7 +33,7 @@ export class Libro implements ILibros{
         this.id = libro == undefined ? null : libro.id;
         this.nombre = libro == undefined ? null : libro.nombre;
         this.autor = libro == undefined ? null : libro.autor;
-        this.año = libro == undefined ? null : libro.año;
+        this.year = libro == undefined ? null : libro.year;
         this.genero = libro == undefined ? null : libro.genero;
         this.descripcion = libro == undefined ? null : libro.descripcion;
     } 

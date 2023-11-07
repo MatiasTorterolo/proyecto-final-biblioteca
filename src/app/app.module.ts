@@ -9,14 +9,15 @@ import { PopularSectionComponent } from './shared/popular-section/popular-sectio
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingComponent } from './components/landing/landing.component';
-import { LoginComponent } from './components/landing/login/login.component';
-import { RegisterComponent } from './components/landing/register/register.component';
+import { RegisterComponent } from './components/auth/register/register.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { EditBookComponent } from './components/admin/edit-book/edit-book.component';
 import { AddBookComponent } from './components/admin/add-book/add-book.component';
 import { ViewBookComponent } from './shared/view-book/view-book.component';
 import { ViewUserComponent } from './components/admin/view-user/view-user.component';
 import { AddUserComponent } from './components/admin/add-user/add-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/auth/login/login.component';
 
 
 @NgModule({
@@ -40,7 +41,10 @@ import { AddUserComponent } from './components/admin/add-user/add-user.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
