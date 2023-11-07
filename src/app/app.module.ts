@@ -16,8 +16,10 @@ import { AddBookComponent } from './components/admin/add-book/add-book.component
 import { ViewBookComponent } from './shared/view-book/view-book.component';
 import { ViewUserComponent } from './components/admin/view-user/view-user.component';
 import { AddUserComponent } from './components/admin/add-user/add-user.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/auth/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -44,7 +46,8 @@ import { LoginComponent } from './components/auth/login/login.component';
     AppRoutingModule,
     NgModule,
     FormsModule,
-    ReactiveFormsModule
+    HttpClientModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

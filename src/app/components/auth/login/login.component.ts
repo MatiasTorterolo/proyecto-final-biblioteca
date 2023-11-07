@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from 'src/app/core/Models';
 import { AuthService } from 'src/app/core/services/auth.service';
-import { FormsModule } from '@angular/forms';
-import { OnInit } from '@angular/core';
 
 
 @Component({
@@ -11,6 +9,7 @@ import { OnInit } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent {
 
   public usuario: Usuario = new Usuario({id: 0});
