@@ -9,6 +9,8 @@ import { Libro, Usuario } from '../Models';
 })
 export class APIService {
 
+  //http://localhost:3000/usuarios
+
   private url: string = 'http://localhost:3000'
 
   constructor(private http: HttpClient) { }
@@ -18,7 +20,7 @@ export class APIService {
   }
 
   getUsuarioToAuth(email: string, password: string): Observable<Usuario[]>{
-    return this.http.get<Usuario[]>(`${this.url}/usuario?email=${email}&password=${password}`);
+    return this.http.get<Usuario[]>(`${this.url}/usuarios?email=${email}&password=${password}`);
   }
 
   getLibros(): Observable<Libro[]>{

@@ -2,7 +2,7 @@
   "libros" : [
     {
       "id": "1",
-      "Nombre": "The Catcher in the Rye",
+      "nombre": "The Catcher in the Rye",
       "Autor": "J.D. Salinger",
       "Año": 1951,
       "Genero": "Novela",
@@ -10,143 +10,143 @@
     },
     {
       "id": "2",
-      "Nombre": "To Kill a Mockingbird",
+      "nombre": "To Kill a Mockingbird",
       "Autor": "Harper Lee",
       "Año": 1960,
       "Genero": "Novela",
       "Descripcion": "La historia de Scout Finch, una niña de seis años que vive en el Sur de Estados Unidos durante la Gran Depresión."
     },
     {
-      "Id": "3",
-      "Nombre": "The Great Gatsby",
+      "id": "3",
+      "nombre": "The Great Gatsby",
       "Autor": "F. Scott Fitzgerald",
       "Año": 1925,
       "Genero": "Novela",
       "Descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan."
     },
     {
-      "Id": "4",
-      "Nombre": "1984",
+      "id": "4",
+      "nombre": "1984",
       "Autor": "George Orwell",
       "Año": 1949,
       "Genero": "Novela",
       "Descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario."
     },
     {
-      "Id": "5",
-      "Nombre": "Pride and Prejudice",
+      "id": "5",
+      "nombre": "Pride and Prejudice",
       "Autor": "Jane Austen",
       "Año": 1813,
       "Genero": "Novela",
       "Descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy."
     },
     {
-      "Id": "6",
-      "Nombre": "The Hobbit",
+      "id": "6",
+      "nombre": "The Hobbit",
       "Autor": "J.R.R. Tolkien",
       "Año": 1937,
       "Genero": "Fantasía",
       "Descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug."
     },
     {
-      "Id": "7",
-      "Nombre": "The Chronicles of Narnia",
+      "id": "7",
+      "nombre": "The Chronicles of Narnia",
       "Autor": "C.S. Lewis",
       "Año": 1950,
       "Genero": "Fantasía",
       "Descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario."
     },
     {
-      "Id": "8",
-      "Nombre": "The Lord of the Rings",
+      "id": "8",
+      "nombre": "The Lord of the Rings",
       "Autor": "J.R.R. Tolkien",
       "Año": 1954,
       "Genero": "Fantasía",
       "Descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media."
     },
     {
-      "Id": "9",
-      "Nombre": "Harry Potter and the Philosopher's Stone",
+      "id": "9",
+      "nombre": "Harry Potter and the Philosopher's Stone",
       "Autor": "J.K. Rowling",
       "Año": 1997,
       "Genero": "Fantasía",
       "Descripcion": "La historia de Harry Potter, un niño que descubre que es un mago y comienza su educación en el Colegio Hogwarts de Magia y Hechicería."
     },
     {
-      "Id": "10",
-      "Nombre": "The Da Vinci Code",
+      "id": "10",
+      "nombre": "The Da Vinci Code",
       "Autor": "Dan Brown",
       "Año": 2003,
       "Genero": "Misterio",
       "Descripcion": "La historia del simbologista Robert Langdon, quien se ve envuelto en una búsqueda de un secreto antiguo."
     },
     {
-      "Id": "11",
-      "Nombre": "The Girl on the Train",
+      "id": "11",
+      "nombre": "The Girl on the Train",
       "Autor": "Paula Hawkins",
       "Año": 2015,
       "Genero": "Suspenso",
       "Descripcion": "La historia de Rachel Watson, una mujer que se ve involucrada en la desaparición de una mujer a la que observa desde el tren."
     },
     {
-      "Id": "12",
-      "Nombre": "Gone Girl",
+      "id": "12",
+      "nombre": "Gone Girl",
       "Autor": "Gillian Flynn",
       "Año": 2012,
       "Genero": "Suspenso",
       "Descripcion": "La historia de Nick Dunne, un hombre cuya esposa Amy desaparece en su quinto aniversario de bodas."
     },
     {
-      "Id": "13",
-      "Nombre": "The Alchemist",
+      "id": "13",
+      "nombre": "The Alchemist",
       "Autor": "Paulo Coelho",
       "Año": 1988,
       "Genero": "Novela",
       "Descripcion": "La historia de Santiago, un joven pastor que sueña con encontrar un tesoro y emprende un viaje por el desierto."
     },
     {
-      "Id": "14",
-      "Nombre": "The Fault in Our Stars",
+      "id": "14",
+      "nombre": "The Fault in Our Stars",
       "Autor": "John Green",
       "Año": 2012,
       "Genero": "Novela",
       "Descripcion": "La historia de Hazel Grace Lancaster, una adolescente con cáncer, y su relación con Augustus Waters."
     },
     {
-      "Id": "15",
-      "Nombre": "The Hunger Games",
+      "id": "15",
+      "nombre": "The Hunger Games",
       "Autor": "Suzanne Collins",
       "Año": 2008,
       "Genero": "Ciencia ficción",
       "Descripcion": "La historia de Katniss Everdeen, una joven que se ve obligada a participar en un juego mortal transmitido por televisión."
     },
     {
-      "Id": "16",
-      "Nombre": "Divergent",
+      "id": "16",
+      "nombre": "Divergent",
       "Autor": "Veronica Roth",
       "Año": 2011,
       "Genero": "Ciencia ficción",
       "Descripcion": "La historia de Beatrice Prior, una joven que vive en una sociedad dividida en facciones y debe enfrentarse a una elección que cambiará su vida."
     },
     {
-      "Id": "17",
-      "Nombre": "The Maze Runner",
+      "id": "17",
+      "nombre": "The Maze Runner",
       "Autor": "James Dashner",
       "Año": 2009,
       "Genero": "Ciencia ficción",
       "Descripcion": "La historia de Thomas, un adolescente que se despierta en un lugar llamado el Área, rodeado de un laberinto."
     },
     {
-      "Id": "18",
-      "Nombre": "The Book Thief",
+      "id": "18",
+      "nombre": "The Book Thief",
       "Autor": "Markus Zusak",
       "Año": 2005,
       "Genero": "Novela",
       "Descripcion": "La historia de Liesel Meminger, una niña que roba libros durante la Segunda Guerra Mundial."
     },
     { 
-      "Id": "19",
-      "Nombre": "The Kite Runner",
+      "id": "19",
+      "nombre": "The Kite Runner",
       "Autor": "Khaled Hosseini",
       "Año": 2003,
       "Genero": "Novela",
@@ -157,166 +157,165 @@
   "usuarios":[
     [
       {
-        "Id": "1",
-        "Nombre": "John",
-        "Apellido": "Doe",
+        "id": 1,
+        "nombre": "John",
+        "apellido": "Doe",
         "email": "johndoe@example.com",
         "password": "password123",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "2",
-        "Nombre": "Jane",
-        "Apellido": "Smith",
+        "id": 2,
+        "nombre": "Jane",
+        "apellido": "Smith",
         "email": "janesmith@example.com",
         "password": "qwerty",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "3",
-        "Nombre": "Robert",
-        "Apellido": "Johnson",
+        "id": 3,
+        "nombre": "Robert",
+        "apellido": "Johnson",
         "email": "robertjohnson@example.com",
         "password": "abc123",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       },
       {
-        "Id": "4",
-        "Nombre": "Emily",
-        "Apellido": "Davis",
+        "id": 4,
+        "nombre": "Emily",
+        "apellido": "Davis",
         "email": "emilydavis@example.com",
         "password": "password456",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "5",
-        "Nombre": "Michael",
-        "Apellido": "Wilson",
+        "id": 5,
+        "nombre": "Michael",
+        "apellido": "Wilson",
         "email": "michaelwilson@example.com",
         "password": "123456",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       },
       {
-        "Id": "6",
-        "Nombre": "Jessica",
-        "Apellido": "Taylor",
+        "id": 6,
+        "nombre": "Jessica",
+        "apellido": "Taylor",
         "email": "jessicataylor@example.com",
         "password": "iloveyou",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "7",
-        "Nombre": "David",
-        "Apellido": "Anderson",
+        "id": 7,
+        "nombre": "David",
+        "apellido": "Anderson",
         "email": "davidanderson@example.com",
         "password": "qwerty123",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "8",
-        "Nombre": "Sarah",
-        "Apellido": "Thomas",
+        "id": 8,
+        "nombre": "Sarah",
+        "apellido": "Thomas",
         "email": "sarahthomas@example.com",
         "password": "password789",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       },
       {
-        "Id": "9",
-        "Nombre": "Christopher",
-        "Apellido": "Jackson",
+        "id": 9,
+        "nombre": "Christopher",
+        "apellido": "Jackson",
         "email": "christopherjackson@example.com",
         "password": "abcxyz",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "10",
-        "Nombre": "Olivia",
-        "Apellido": "White",
+        "id": 10,
+        "nombre": "Olivia",
+        "apellido": "White",
         "email": "oliviawhite@example.com",
         "password": "letmein",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       },
       {
-        "Id": "11",
-        "Nombre": "Daniel",
-        "Apellido": "Harris",
+        "id": 11,
+        "nombre": "Daniel",
+        "apellido": "Harris",
         "email": "danielharris@example.com",
         "password": "password1",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "12",
-        "Nombre": "Sophia",
-        "Apellido": "Martin",
+        "id": 12,
+        "nombre": "Sophia",
+        "apellido": "Martin",
         "email": "sophiamartin@example.com",
         "password": "123abc",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "13",
-        "Nombre": "Matthew",
-        "Apellido": "Thompson",
+        "id": 13,
+        "nombre": "Matthew",
+        "apellido": "Thompson",
         "email": "matthewthompson@example.com",
         "password": "qazwsx",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       },
       {
-        "Id": "14",
-        "Nombre": "Ava",
-        "Apellido": "Garcia",
+        "id": 14,
+        "nombre": "Ava",
+        "apellido": "Garcia",
         "email": "avagarcia@example.com",
         "password": "pass123",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "15",
-        "Nombre": "Andrew",
-        "Apellido": "Lee",
+        "id": 15,
+        "nombre": "Andrew",
+        "apellido": "Lee",
         "email": "andrewlee@example.com",
         "password": "987654",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       },
       {
-        "Id": "16",
-        "Nombre": "Isabella",
-        "Apellido": "Clark",
+        "id": 16,
+        "nombre": "Isabella",
+        "apellido": "Clark",
         "email": "isabellaclark@example.com",
         "password": "hello123",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "17",
-        "Nombre": "Ethan",
-        "Apellido": "Rodriguez",
+        "id": 17,
+        "nombre": "Ethan",
+        "apellido": "Rodriguez",
         "email": "ethanrodriguez@example.com",
         "password": "qwertyuiop",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "18",
-        "Nombre": "Mia",
-        "Apellido": "Lopez",
+        "id": 18,
+        "nombre": "Mia",
+        "apellido": "Lopez",
         "email": "mialopez@example.com",
         "password": "ilovemusic",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       },
       {
-        "Id": "19",
-        "Nombre": "James",
-        "Apellido": "Hall",
+        "id": 19,
+        "nombre": "James",
+        "apellido": "Hall",
         "email": "jameshall@example.com",
         "password": "password2",
-        "Tipo de cuenta": "Usuario"
+        "tipo de cuenta": "Usuario"
       },
       {
-        "Id": "20",
-        "Nombre": "Charlotte",
-        "Apellido": "Young",
+        "id": 20,
+        "nombre": "Charlottttttttttte",
+        "apellido": "Young",
         "email": "charlotteyoung@example.com",
         "password": "zxcvbnm",
-        "Tipo de cuenta": "Admin"
+        "tipo de cuenta": "Admin"
       }
     ]
-  ]
-
+  ] 
 }
