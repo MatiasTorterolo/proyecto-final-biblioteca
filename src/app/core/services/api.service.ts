@@ -15,8 +15,13 @@ export class APIService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers(): Observable<Usuario[]> {
-    return this.http.get<Usuario[]>(`${this.url}/`);
+  getUsuarios(): Observable<Usuario[]> {
+    return this.http.get<Usuario[]>(`${this.url}/usuarios`);
+  }
+
+  addUsuario(createUsuario: Usuario): Observable<boolean> {
+    const urlAdd = `${this.url}/usuarios`;
+    return this.http.post<boolean>(urlAdd, createUsuario);
   }
 
   getUsuarioToAuth(email: string, password: string): Observable<Usuario[]>{
