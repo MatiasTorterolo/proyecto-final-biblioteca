@@ -18,12 +18,12 @@ export class LoginComponent {
 
   private emailPattern: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  loginForm: FormGroup = this.fb.group({
+  loginForm: FormGroup = this.formBuilder.group({
     email: new FormControl('', [Validators.required, Validators.pattern(this.emailPattern)]),
     password: new FormControl('', [Validators.required, Validators.minLength(8)]),
   });
 
-  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {}
+  constructor(private formBuilder: FormBuilder, private authService: AuthService, private router: Router) {}
 
   /*
   public async checkAuth(){
@@ -43,7 +43,7 @@ export class LoginComponent {
   }
   */
 
-  isvalidFiled(field: string): boolean | null {
+  isValidFiled(field: string): boolean | null {
     return this.loginForm.controls[field].errors && this.loginForm.controls[field].touched;
 
   }
@@ -59,7 +59,7 @@ export class LoginComponent {
         case 'required':
           return "Este campo es requerido.";
         case 'minlenght':
-          return `Minimo ${errors['minlenght'].requiredLenght} caracteres.`;
+          return `Minimo ${errors['minlength'].requiredLength} caracteres.`;
       }
     }
 
@@ -67,8 +67,8 @@ export class LoginComponent {
   }
 
 
-  async onSubmit() {
-
+  public async onSubmit() {
+    
     if(this.loginForm.valid) {
       console.log('Formulario válido. Usuario: ', this.loginForm.value.email);
     } else {
@@ -92,8 +92,4 @@ export class LoginComponent {
       console.log(error);
     }
   }
-
-
-
-
 }
