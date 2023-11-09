@@ -10,7 +10,7 @@ export interface ILibros{
 
 export interface IUsuarios{
     
-    id: number | null;
+    id?: number | undefined;
     nombre: string;
     apellido: string;
     email: string;
