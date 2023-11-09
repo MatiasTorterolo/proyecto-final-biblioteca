@@ -1,7 +1,7 @@
 import {IUsuarios, ILibros} from "./Interface";
 
 export class Usuario implements IUsuarios{
-        id: number | null = null;
+        id?: number | undefined;
         nombre: string = '';
         apellido: string = '';
         email: string = '';
@@ -11,6 +11,7 @@ export class Usuario implements IUsuarios{
     constructor (usuario ? : any){
 
         this.id = usuario == undefined ? null : usuario.id;
+        this.nombre = usuario == undefined ? null : usuario.nombre;
         this.nombre = usuario == undefined ? null : usuario.nombre;
         this.apellido = usuario == undefined ? null : usuario.apellido;
         this.email = usuario == undefined ? null : usuario.email;

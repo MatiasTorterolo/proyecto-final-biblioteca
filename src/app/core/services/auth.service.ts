@@ -8,22 +8,74 @@ import { APIService } from './api.service';
 })
 export class AuthService {
 
+  private usuario: Usuario | null | undefined = null;
+
   constructor(private apiService: APIService) { }
 
-  public async checkAuth(email: string, password: string): Promise<boolean>{
 
-    let usuarios: Usuario[] = [];
+  /* currentUsuario
+  get currentUsuario(): Usuario | undefined {
+    if (!this.usuario) return undefined;
+    return structuredClone(this.usuario);
+  }
+  */
+  
+  
+  public async login(email: string, password: string): Promise<boolean>{
+
+    let isLoggedIn = false;
 
     try{
 
       let apiResponse = this.apiService.getUsuarioToAuth(email, password);
 
-      usuarios = await lastValueFrom(apiResponse);
+      let usuarioResponse = await lastValueFrom(apiResponse);
+      
+      this.usuario = usuarioResponse.shift(); //shift devuelve REMUEVE el primer elemento de un arreglo y lo retorna
+
+      if(this.usuario) {
+        localStorage.setItem('token', this.usuario.id!.toString());
+        isLoggedIn = true;
+      }
 
     }catch(error){
-      console.log(error);
+      throw error;
     }
 
-    return usuarios.length == 1;
+    return isLoggedIn;
   }
+
+  public async register(usuario: Usuario): Promise<boolean>{
+    
+    let isRegister = false;
+
+    try{
+
+      let apiResponse = this.apiService.addUsuario(usuario);
+      
+      let usuarioResponse = await lastValueFrom(apiResponse);
+
+      if(usuarioResponse){
+        console.log('El usuario fue creado con exito')
+        isRegister = true;
+      }   
+    } catch (error){
+      throw error;
+    }
+
+    return isRegister;
+  }
+
+  public logOut() {
+    this.usuario = undefined;
+    localStorage.removeItem('token');
+  }
+
+  public isAuthorized(): boolean{
+    return localStorage.getItem('token') ? true : false;
+  }
+
+  
+
+
 }
