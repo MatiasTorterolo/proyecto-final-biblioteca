@@ -1,18 +1,22 @@
-import { NgModule } from '@angular/core';
+import { NgModule, inject } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { HomeComponent } from './components/home/home.component';
+import { authGuard } from './guards/auth.guard';
+import { loginGuard } from './guards/login.guard';
+
 
 const routes: Routes = [
   {
     path: 'landing',
-    component: LandingComponent
+    component: LandingComponent,
+    canActivate: [loginGuard]
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
   },
   {
     path: 'register',
@@ -20,7 +24,8 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate: [authGuard]
   },
   {
     path: '',
