@@ -2,7 +2,7 @@
     width: 300px;
     margin: 0 auto;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -27,7 +27,7 @@
   
   label {
     display: block;
-    color: #666;
+    color: darkolivegreen;
     font-size: 0.9em;
     margin-bottom: 5px;
   }
@@ -69,8 +69,8 @@
   }
 
   .login-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: white;
+    color: whitesmoke;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -78,7 +78,7 @@
   }
 
   .login-button:disabled {
-    background-color: #ccc;
+    background-color: burlywood;
     cursor: not-allowed;
   }
 

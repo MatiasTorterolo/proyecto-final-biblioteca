@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #D2B48C; /* Color marrón claro */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    color: #4d3319; /* Marrón oscuro */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #4d3319; /* Marrón oscuro */
+  }
