@@ -1,1 +1,28 @@
-<p>view-book works!</p>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Año</th>
+        <th>Genero</th>
+        <th>Imagen</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="libros | async as libros">
+      <tr *ngFor="let libro of libros">    
+        <td>{{ libro.nombre }}</td>
+        <td>{{ libro.Autor }}</td>
+        <td>{{ libro.Anio }}</td>
+        <td>{{ libro.Genero }}</td>
+        <td><img [src]="libro.imagenUrl" height="50"></td>
+        <td>{{ libro.Descripcion }}</td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+  
+  
+  

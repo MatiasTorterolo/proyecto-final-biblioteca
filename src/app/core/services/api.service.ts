@@ -8,6 +8,9 @@ import { Libro, Usuario } from '../Models';
   providedIn: 'root'
 })
 export class APIService {
+  static get(apiUrl: string): Observable<any> {
+    throw new Error('Method not implemented.');
+  }
 
   //http://localhost:3000/usuarios
 
@@ -34,6 +37,13 @@ export class APIService {
   getLibros(): Observable<Libro[]>{
     return this.http.get<Libro[]>(`${this.url}/libros`);
   }
+
+  getLibroData(id: number): Observable<any> {
+    // Concatena el libroId a la URL si es necesario
+    const url = `${this.url}/libros/${id}`;
+    return this.http.get(url);
+  }
+
 
   addLibro(createLibro: Libro): Observable<boolean> {
     const urlAdd = `${this.url}/libros`;

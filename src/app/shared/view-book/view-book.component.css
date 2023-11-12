@@ -1,0 +1,24 @@
+
+  .table-container{
+    width: 300px; /* Ancho del contenedor de la tabla */
+    height: 400px; /* Altura del contenedor de la tabla */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si es necesario */
+    margin-right: 20px; /* Margen derecho para separar del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }

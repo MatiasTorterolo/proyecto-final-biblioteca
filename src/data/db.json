@@ -6,6 +6,7 @@
       "Autor": "J.D. Salinger",
       "Año": 1951,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId1.jpg" ,
       "Descripcion": "La historia de Holden Caulfield, un adolescente que se encuentra en un punto de transición entre la niñez y la adultez."
     },
     {
@@ -14,6 +15,7 @@
       "Autor": "Harper Lee",
       "Año": 1960,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId2.jpg",
       "Descripcion": "La historia de Scout Finch, una niña de seis años que vive en el Sur de Estados Unidos durante la Gran Depresión."
     },
     {
@@ -22,6 +24,7 @@
       "Autor": "F. Scott Fitzgerald",
       "Año": 1925,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId3.jpg",
       "Descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan."
     },
     {
@@ -30,6 +33,7 @@
       "Autor": "George Orwell",
       "Año": 1949,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId4.jpg",
       "Descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario."
     },
     {
@@ -38,6 +42,7 @@
       "Autor": "Jane Austen",
       "Año": 1813,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId5.jpg",
       "Descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy."
     },
     {
@@ -46,6 +51,7 @@
       "Autor": "J.R.R. Tolkien",
       "Año": 1937,
       "Genero": "Fantasía",
+      "imagenUrl": "./src/assets/imagenes/imagenId6.jpg",
       "Descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug."
     },
     {
@@ -54,6 +60,7 @@
       "Autor": "C.S. Lewis",
       "Año": 1950,
       "Genero": "Fantasía",
+      "imagenUrl": "./src/assets/imagenes/imagenId7.jpg",
       "Descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario."
     },
     {
@@ -62,6 +69,7 @@
       "Autor": "J.R.R. Tolkien",
       "Año": 1954,
       "Genero": "Fantasía",
+      "imagenUrl": "../src/assets/imagenes/imagenId8.jpg",
       "Descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media."
     },
     {
@@ -70,6 +78,7 @@
       "Autor": "J.K. Rowling",
       "Año": 1997,
       "Genero": "Fantasía",
+      "imagenUrl": "./src/assets/imagenes/imagenId9.jpg",
       "Descripcion": "La historia de Harry Potter, un niño que descubre que es un mago y comienza su educación en el Colegio Hogwarts de Magia y Hechicería."
     },
     {
@@ -78,6 +87,7 @@
       "Autor": "Dan Brown",
       "Año": 2003,
       "Genero": "Misterio",
+      "imagenUrl": "./src/assets/imagenes/imagenId10.jpg",
       "Descripcion": "La historia del simbologista Robert Langdon, quien se ve envuelto en una búsqueda de un secreto antiguo."
     },
     {
@@ -86,6 +96,7 @@
       "Autor": "Paula Hawkins",
       "Año": 2015,
       "Genero": "Suspenso",
+      "imagenUrl": "./src/assets/imagenes/imagenId11.jpg",
       "Descripcion": "La historia de Rachel Watson, una mujer que se ve involucrada en la desaparición de una mujer a la que observa desde el tren."
     },
     {
@@ -94,6 +105,7 @@
       "Autor": "Gillian Flynn",
       "Año": 2012,
       "Genero": "Suspenso",
+      "imagenUrl": "./src/assets/imagenes/imagenId12.jpg",
       "Descripcion": "La historia de Nick Dunne, un hombre cuya esposa Amy desaparece en su quinto aniversario de bodas."
     },
     {
@@ -102,6 +114,7 @@
       "Autor": "Paulo Coelho",
       "Año": 1988,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId13.jpg",
       "Descripcion": "La historia de Santiago, un joven pastor que sueña con encontrar un tesoro y emprende un viaje por el desierto."
     },
     {
@@ -110,6 +123,7 @@
       "Autor": "John Green",
       "Año": 2012,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId14.jpg",
       "Descripcion": "La historia de Hazel Grace Lancaster, una adolescente con cáncer, y su relación con Augustus Waters."
     },
     {
@@ -118,6 +132,7 @@
       "Autor": "Suzanne Collins",
       "Año": 2008,
       "Genero": "Ciencia ficción",
+      "imagenUrl": "./src/assets/imagenes/imagenId15.jpg",
       "Descripcion": "La historia de Katniss Everdeen, una joven que se ve obligada a participar en un juego mortal transmitido por televisión."
     },
     {
@@ -126,6 +141,7 @@
       "Autor": "Veronica Roth",
       "Año": 2011,
       "Genero": "Ciencia ficción",
+      "imagenUrl": "./src/assets/imagenes/imagenId16.jpg",
       "Descripcion": "La historia de Beatrice Prior, una joven que vive en una sociedad dividida en facciones y debe enfrentarse a una elección que cambiará su vida."
     },
     {
@@ -134,6 +150,7 @@
       "Autor": "James Dashner",
       "Año": 2009,
       "Genero": "Ciencia ficción",
+      "imagenUrl": "./src/assets/imagenes/imagenId17.jpg",
       "Descripcion": "La historia de Thomas, un adolescente que se despierta en un lugar llamado el Área, rodeado de un laberinto."
     },
     {
@@ -142,6 +159,7 @@
       "Autor": "Markus Zusak",
       "Año": 2005,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId18.jpg",
       "Descripcion": "La historia de Liesel Meminger, una niña que roba libros durante la Segunda Guerra Mundial."
     },
     {
@@ -150,6 +168,7 @@
       "Autor": "Khaled Hosseini",
       "Año": 2003,
       "Genero": "Novela",
+      "imagenUrl": "./src/assets/imagenes/imagenId19.jpg",
       "Descripcion": "La historia de Amir, un niño afgano que vive en Kabul y su amistad con Hassan, un niño hazara."
     }
   ],

@@ -5,6 +5,7 @@ export interface ILibros{
     autor: string;
     year: number;
     genero: string;
+    imagen: string;
     descripcion: string;
 }
 
