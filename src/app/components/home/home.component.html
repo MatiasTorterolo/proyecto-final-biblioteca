@@ -1,8 +1,9 @@
 <div>
    <app-nav-bar></app-nav-bar>
+   <app-noticias-aside></app-noticias-aside>
        <div class="principal">
             <app-view-book [inputLibros]="libro" (libroToEdit)="editLibro($event)" (libroToDelete)="deleteLibro($event)" > </app-view-book>
             <app-add-book (libroToCreate)="createLibro($event)"></app-add-book>
-       </div> 
+       </div>    
    <app-footer></app-footer> 
 </div>

@@ -23,8 +23,9 @@
         <td>{{ libro.genero }}</td>
         <td><img src={{libro.imagenUrl}}></td>
         <td>{{ libro.descripcion }}</td>
-        <td><button class="delete-button" (click) = "deleteLibro(libro.id!)">X</button></td>
-        <td><button class="edit-button" (click)="editLibro(libro)">E</button></td>
+        <td><button class="delete-button" (click) = "deleteLibro(libro.id!)">Borrar</button></td>
+        <td><button class="edit-button" (click)="editLibro(libro)">Editar</button></td>
+        <!-- <td><button class="return-button" (click)="returnLibro(libro)">Cambiar estado </button></td> -->
       </tr>
     </tbody>
   </table>
