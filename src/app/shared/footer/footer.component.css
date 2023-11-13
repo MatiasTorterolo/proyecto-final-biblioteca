@@ -1,6 +1,9 @@
 footer {
-    background-color: #333;
-    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(119, 113, 113, 0.8); /* Cambia el color de fondo según tus necesidades */
+    color: #fff; /* Cambia el color del texto según tus necesidades */
     padding: 10px;
     text-align: center;
   }

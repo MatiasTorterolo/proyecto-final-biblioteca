@@ -1,175 +1,174 @@
 {
   "libros": [
     {
-      "id": "1",
-      "nombre": "The Catcher in the Rye",
-      "Autor": "J.D. Salinger",
-      "Año": 1951,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId1.jpg" ,
-      "Descripcion": "La historia de Holden Caulfield, un adolescente que se encuentra en un punto de transición entre la niñez y la adultez."
-    },
-    {
-      "id": "2",
-      "nombre": "To Kill a Mockingbird",
-      "Autor": "Harper Lee",
-      "Año": 1960,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId2.jpg",
-      "Descripcion": "La historia de Scout Finch, una niña de seis años que vive en el Sur de Estados Unidos durante la Gran Depresión."
-    },
-    {
       "id": "3",
       "nombre": "The Great Gatsby",
-      "Autor": "F. Scott Fitzgerald",
-      "Año": 1925,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId3.jpg",
-      "Descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan."
+      "autor": "F. Scott Fitzgerald",
+      "year": 1925,
+      "genero": "Novela",
+      "imagenUrl": "../src/assets/imagenes/imagenId3.jpg",
+      "descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan.",
+      "disponibilidad": 1
     },
     {
       "id": "4",
       "nombre": "1984",
-      "Autor": "George Orwell",
-      "Año": 1949,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId4.jpg",
-      "Descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario."
+      "autor": "George Orwell",
+      "year": 1949,
+      "genero": "Novela",
+      "imagenUrl": "../src/assets/imagenes/imagenId4.jpg",
+      "descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario.",
+      "disponibilidad": 1
     },
     {
       "id": "5",
       "nombre": "Pride and Prejudice",
-      "Autor": "Jane Austen",
-      "Año": 1813,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId5.jpg",
-      "Descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy."
+      "autor": "Jane Austen",
+      "year": 1813,
+      "genero": "Novela",
+      "imagenUrl": "../src/assets/imagenes/imagenId5.jpg",
+      "descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy.",
+      "disponibilidad": 1
     },
     {
       "id": "6",
       "nombre": "The Hobbit",
-      "Autor": "J.R.R. Tolkien",
-      "Año": 1937,
-      "Genero": "Fantasía",
-      "imagenUrl": "./src/assets/imagenes/imagenId6.jpg",
-      "Descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug."
+      "autor": "J.R.R. Tolkien",
+      "year": 1937,
+      "genero": "Fantasía",
+      "imagenUrl": "../src/assets/imagenes/imagenId6.jpg",
+      "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug.",
+      "disponibilidad": 1
     },
     {
       "id": "7",
       "nombre": "The Chronicles of Narnia",
-      "Autor": "C.S. Lewis",
-      "Año": 1950,
-      "Genero": "Fantasía",
-      "imagenUrl": "./src/assets/imagenes/imagenId7.jpg",
-      "Descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario."
+      "autor": "C.S. Lewis",
+      "year": 1950,
+      "genero": "Fantasía",
+      "imagenUrl": "../src/assets/imagenes/imagenId7.jpg",
+      "descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario.",
+      "disponibilidad": 1
     },
     {
       "id": "8",
       "nombre": "The Lord of the Rings",
-      "Autor": "J.R.R. Tolkien",
-      "Año": 1954,
-      "Genero": "Fantasía",
+      "autor": "J.R.R. Tolkien",
+      "year": 1954,
+      "genero": "Fantasía",
       "imagenUrl": "../src/assets/imagenes/imagenId8.jpg",
-      "Descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media."
+      "descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media.",
+      "disponibilidad": 1
     },
     {
       "id": "9",
       "nombre": "Harry Potter and the Philosopher's Stone",
-      "Autor": "J.K. Rowling",
-      "Año": 1997,
-      "Genero": "Fantasía",
-      "imagenUrl": "./src/assets/imagenes/imagenId9.jpg",
-      "Descripcion": "La historia de Harry Potter, un niño que descubre que es un mago y comienza su educación en el Colegio Hogwarts de Magia y Hechicería."
+      "autor": "J.K. Rowling",
+      "year": 1997,
+      "genero": "Fantasía",
+      "imagenUrl": "../src/assets/imagenes/imagenId9.jpg",
+      "descripcion": "La historia de Harry Potter, un niño que descubre que es un mago y comienza su educación en el Colegio Hogwarts de Magia y Hechicería.",
+      "disponibilidad": 1
     },
     {
       "id": "10",
       "nombre": "The Da Vinci Code",
-      "Autor": "Dan Brown",
-      "Año": 2003,
-      "Genero": "Misterio",
-      "imagenUrl": "./src/assets/imagenes/imagenId10.jpg",
-      "Descripcion": "La historia del simbologista Robert Langdon, quien se ve envuelto en una búsqueda de un secreto antiguo."
+      "autor": "Dan Brown",
+      "year": 2003,
+      "genero": "Misterio",
+      "imagenUrl": "../src/assets/imagenes/imagenId10.jpg",
+      "descripcion": "La historia del simbologista Robert Langdon, quien se ve envuelto en una búsqueda de un secreto antiguo.",
+      "disponibilidad": 1
     },
     {
       "id": "11",
       "nombre": "The Girl on the Train",
-      "Autor": "Paula Hawkins",
-      "Año": 2015,
-      "Genero": "Suspenso",
-      "imagenUrl": "./src/assets/imagenes/imagenId11.jpg",
-      "Descripcion": "La historia de Rachel Watson, una mujer que se ve involucrada en la desaparición de una mujer a la que observa desde el tren."
+      "autor": "Paula Hawkins",
+      "year": 2015,
+      "genero": "Suspenso",
+      "imagenUrl": "../src/assets/imagenes/imagenId11.jpg",
+      "descripcion": "La historia de Rachel Watson, una mujer que se ve involucrada en la desaparición de una mujer a la que observa desde el tren.",
+      "disponibilidad": 1
     },
     {
       "id": "12",
       "nombre": "Gone Girl",
-      "Autor": "Gillian Flynn",
-      "Año": 2012,
-      "Genero": "Suspenso",
-      "imagenUrl": "./src/assets/imagenes/imagenId12.jpg",
-      "Descripcion": "La historia de Nick Dunne, un hombre cuya esposa Amy desaparece en su quinto aniversario de bodas."
+      "autor": "Gillian Flynn",
+      "year": 2012,
+      "genero": "Suspenso",
+      "imagenUrl": "../src/assets/imagenes/imagenId12.jpg",
+      "descripcion": "La historia de Nick Dunne, un hombre cuya esposa Amy desaparece en su quinto aniversario de bodas.",
+      "disponibilidad": 1
     },
     {
       "id": 13,
       "nombre": "The Alchemist",
-      "Autor": "Paulo Coelho",
-      "Año": 1988,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId13.jpg",
-      "Descripcion": "La historia de Santiago, un joven pastor que sueña con encontrar un tesoro y emprende un viaje por el desierto."
+      "autor": "Paulo Coelho",
+      "year": 1988,
+      "genero": "Novela",
+      "imagenUrl": "../src/assets/imagenes/imagenId13.jpg",
+      "descripcion": "La historia de Santiago, un joven pastor que sueña con encontrar un tesoro y emprende un viaje por el desierto.",
+      "disponibilidad": 1
     },
     {
       "id": 14,
       "nombre": "The Fault in Our Stars",
-      "Autor": "John Green",
-      "Año": 2012,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId14.jpg",
-      "Descripcion": "La historia de Hazel Grace Lancaster, una adolescente con cáncer, y su relación con Augustus Waters."
+      "autor": "John Green",
+      "year": 2012,
+      "genero": "Novela",
+      "imagenUrl": "../src/assets/imagenes/imagenId14.jpg",
+      "descripcion": "La historia de Hazel Grace Lancaster, una adolescente con cáncer, y su relación con Augustus Waters.",
+      "disponibilidad": 1
     },
     {
       "id": 15,
       "nombre": "The Hunger Games",
-      "Autor": "Suzanne Collins",
-      "Año": 2008,
-      "Genero": "Ciencia ficción",
-      "imagenUrl": "./src/assets/imagenes/imagenId15.jpg",
-      "Descripcion": "La historia de Katniss Everdeen, una joven que se ve obligada a participar en un juego mortal transmitido por televisión."
+      "autor": "Suzanne Collins",
+      "year": 2008,
+      "genero": "Ciencia ficción",
+      "imagenUrl": "../src/assets/imagenes/imagenId15.jpg",
+      "descripcion": "La historia de Katniss Everdeen, una joven que se ve obligada a participar en un juego mortal transmitido por televisión.",
+      "disponibilidad": 1
     },
     {
       "id": 16,
       "nombre": "Divergent",
-      "Autor": "Veronica Roth",
-      "Año": 2011,
-      "Genero": "Ciencia ficción",
-      "imagenUrl": "./src/assets/imagenes/imagenId16.jpg",
-      "Descripcion": "La historia de Beatrice Prior, una joven que vive en una sociedad dividida en facciones y debe enfrentarse a una elección que cambiará su vida."
+      "autor": "Veronica Roth",
+      "year": 2011,
+      "genero": "Ciencia ficción",
+      "imagenUrl": "../src/assets/imagenes/imagenId16.jpg",
+      "descripcion": "La historia de Beatrice Prior, una joven que vive en una sociedad dividida en facciones y debe enfrentarse a una elección que cambiará su vida.",
+      "disponibilidad": 1
     },
     {
       "id": 17,
       "nombre": "The Maze Runner",
-      "Autor": "James Dashner",
-      "Año": 2009,
-      "Genero": "Ciencia ficción",
-      "imagenUrl": "./src/assets/imagenes/imagenId17.jpg",
-      "Descripcion": "La historia de Thomas, un adolescente que se despierta en un lugar llamado el Área, rodeado de un laberinto."
+      "autor": "James Dashner",
+      "year": 2009,
+      "genero": "Ciencia ficción",
+      "imagenUrl": "../src/assets/imagenes/imagenId17.jpg",
+      "descripcion": "La historia de Thomas, un adolescente que se despierta en un lugar llamado el Área, rodeado de un laberinto.",
+      "disponibilidad": 1
     },
     {
       "id": 18,
       "nombre": "The Book Thief",
-      "Autor": "Markus Zusak",
-      "Año": 2005,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId18.jpg",
-      "Descripcion": "La historia de Liesel Meminger, una niña que roba libros durante la Segunda Guerra Mundial."
+      "autor": "Markus Zusak",
+      "year": 2005,
+      "genero": "Novela",
+      "imagenUrl": "../src/assets/imagenes/imagenId18.jpg",
+      "descripcion": "La historia de Liesel Meminger, una niña que roba libros durante la Segunda Guerra Mundial.",
+      "disponibilidad": 1
     },
     {
       "id": 19,
       "nombre": "The Kite Runner",
-      "Autor": "Khaled Hosseini",
-      "Año": 2003,
-      "Genero": "Novela",
-      "imagenUrl": "./src/assets/imagenes/imagenId19.jpg",
-      "Descripcion": "La historia de Amir, un niño afgano que vive en Kabul y su amistad con Hassan, un niño hazara."
+      "autor": "Khaled Hosseini",
+      "year": 2003,
+      "genero": "Novela",
+      "imagenUrl": "../src/assets/imagenes/imagenId19.jpg",
+      "descripcion": "La historia de Amir, un niño afgano que vive en Kabul y su amistad con Hassan, un niño hazara.",
+      "disponibilidad": 1
     }
   ],
   "usuarios": [

@@ -1,6 +1,7 @@
 
-<div class="table-container">
-  <table>
+<div>
+  <H2>Libros</H2>
+  <table class="mi-tabla">
     <thead>
       <tr>
         <th>Título</th>
@@ -9,20 +10,25 @@
         <th>Genero</th>
         <th>Imagen</th>
         <th>Descripción</th>
+        <th>Borrr</th>
+        <th>Editar</th>
+
       </tr>
     </thead>
-    <tbody *ngIf="libros | async as libros">
-      <tr *ngFor="let libro of libros">    
+    <tbody>
+      <tr *ngFor="let libro of inputLibros">    
         <td>{{ libro.nombre }}</td>
-        <td>{{ libro.Autor }}</td>
-        <td>{{ libro.Anio }}</td>
-        <td>{{ libro.Genero }}</td>
-        <td><img [src]="libro.imagenUrl" height="50"></td>
-        <td>{{ libro.Descripcion }}</td>
+        <td>{{ libro.autor }}</td>
+        <td>{{ libro.year }}</td>
+        <td>{{ libro.genero }}</td>
+        <td><img src="{{libro.imagenUrl}}"></td>
+        <td>{{ libro.descripcion }}</td>
+        <td><button class="delete-button" (click) = "deleteLibro(libro.id!)">X</button></td>
+        <td><button class="edit-button" (click)="editLibro(libro)">E</button></td>
       </tr>
     </tbody>
   </table>
- </div>
+ </div> 
   
   
   

@@ -1,1 +1,33 @@
-<p>add-book works!</p>
+<div>
+    <h2 class="custom-dialog-title">Agregar Libro</h2>
+    <form autocomplete="off" class="login-form" (ngSubmit)="createLibro()">
+  
+      <div class="form-field">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="newLibro.nombre" required>
+      </div>
+  
+      <div class="form-field">
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor" [(ngModel)]="newLibro.autor" required>
+      </div>
+  
+      <div class="form-field">
+        <label for="dni">Año:</label>
+        <input type="text" id="year" name="year" [(ngModel)]="newLibro.year" required>
+      </div>
+  
+      <div class="form-field">
+        <label for="ciudad">Genero:</label>
+        <input type="text" id="genero" name="genero" [(ngModel)]="newLibro.genero" required>
+      </div>
+
+      <div class="form-field">
+        <label for="ciudad">Descripcion:</label>
+        <input type="text" id="descripcion" name="descripcion" [(ngModel)]="newLibro.descripcion" required>
+      </div>
+  
+      <button type="submit" class="login-button">Crear Libro</button>
+    </form>
+  </div>
+  

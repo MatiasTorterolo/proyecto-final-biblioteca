@@ -1,9 +1,8 @@
-<app-nav-bar></app-nav-bar>
-<div class="principal">
-    <button (click)="obtenerDetallesLibro(libro.id)" >Mostrar detalles</button>
-   <div class="home-container">
-    <app-view-book> </app-view-book>
-   </div> 
-    <app-footer></app-footer>  
-</div> 
- 
+<div>
+   <app-nav-bar></app-nav-bar>
+       <div class="principal">
+            <app-view-book [inputLibros]="libro" (libroToEdit)="editLibro($event)" (libroToDelete)="deleteLibro($event)" > </app-view-book>
+            <app-add-book (libroToCreate)="createLibro($event)"></app-add-book>
+       </div> 
+   <app-footer></app-footer> 
+</div>

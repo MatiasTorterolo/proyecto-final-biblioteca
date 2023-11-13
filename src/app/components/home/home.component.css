@@ -1,12 +1,15 @@
 .principal{
-    background-image: url('src\assets\imagenes\imagen-background.jpg'); /* Ajusta la ruta según la ubicación y el nombre de tu imagen */
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Ajusta según el diseño deseado */
+    height: 150vh; /* Ajusta según el diseño deseado */
     margin: 0;
     padding: 0;
+
 }
-.home-container{
-    display: flex;
+
+app-view-boook{
+    float: left;
 }
+

@@ -27,8 +27,10 @@ export class Libro implements ILibros{
     autor: string = '';
     year: number = 0;
     genero: string = '';
-    imagen: string = '';
+    imagenUrl: string = '';
     descripcion: string = '';
+    disponibilidad: number | null = null;
+
 
     constructor (libro ? : any){
 
@@ -37,7 +39,8 @@ export class Libro implements ILibros{
         this.autor = libro == undefined ? null : libro.autor;
         this.year = libro == undefined ? null : libro.year;
         this.genero = libro == undefined ? null : libro.genero;
-        this.imagen = libro == undefined ? null : libro.imagen;
+        this.imagenUrl = libro == undefined ? null : libro.imagenUrl;
         this.descripcion = libro == undefined ? null : libro.descripcion;
+        this.disponibilidad = libro == undefined ? null : libro.disponibilidad;
     } 
 }
