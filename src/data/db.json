@@ -8,7 +8,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId3.jpg",
       "descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": "4",
@@ -18,7 +18,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId4.jpg",
       "descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": "5",
@@ -344,7 +344,7 @@
   "noticias": [
     {
       "id": 1,
-      "titulo": "Nuevo libro disponible", 
+      "titulo": "Nuevo libro disponible",
       "contenido": "nos acotnece tener nuevo libro disponible",
       "imagen": "../assets/imagenes/imagenId19.jpg"
     }

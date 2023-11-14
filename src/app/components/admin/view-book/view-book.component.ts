@@ -1,8 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { APIService } from 'src/app/core/services/api.service';
-import { ActivatedRoute } from '@angular/router';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Libro } from 'src/app/core/Models';
 
 @Component({
@@ -10,14 +6,13 @@ import { Libro } from 'src/app/core/Models';
   templateUrl: './view-book.component.html',
   styleUrls: ['./view-book.component.css']
 })
-export class ViewBookComponent implements OnInit{
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+export class ViewBookComponent {
+
 
   @Input() inputLibros: Array<Libro> = []
   @Output() libroToDelete: EventEmitter<number> = new EventEmitter();
   @Output() libroToEdit: EventEmitter<Libro> = new EventEmitter();
+  @Output() libroToReturn: EventEmitter<number> = new EventEmitter();
 
 
   public deleteLibro(id: number){
@@ -26,6 +21,11 @@ export class ViewBookComponent implements OnInit{
 
   public editLibro(libro: Libro){
     this.libroToEdit.emit(libro);
+  }
+
+  public returnLibro(id: number){
+    this.libroToReturn.emit(id);
+    console.log("funciona el ts de view-book ", id);
   }
 
 }

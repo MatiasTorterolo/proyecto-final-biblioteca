@@ -37,36 +37,15 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  public editLibro(libro: Libro) {
-
-    const dialogRef = this.dialog.open(EditBookComponent, { data: libro, height: '400px', width: '350px' });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('El cuadro de diálogo se cerró con resultado:', result);
-    });
-  }
-
-  public createLibro(libro: Libro) {
-
-    this.apiService.addLibro(libro).subscribe({
-      next: () => {
+  public borrowLibro(id: number): void {
+    console.log("funciona el ts de admin component ", id);
+    this.apiService.cambiarDisponibilidad(id, 0).subscribe({
+      next: ()=>{
         this.getLibros();
-        alert("Libro creado con exito");
-
+        alert("Libro reservado con exito");
       },
-      error: () => alert("No se ha podido crear el libro")
+      error: ()=> alert("No se ha podido reservar el libro")
     })
-  }
-
-  public deleteLibro(id: number){
-
-      this.apiService.deleteLibro(id).subscribe({
-        next: ()=>{
-          this.getLibros();
-          alert("Libro eliminado con exito");
-        },
-        error: ()=> alert("No se ha podido eliminar el libro")
-      })
-  }
+  } 
 
 }

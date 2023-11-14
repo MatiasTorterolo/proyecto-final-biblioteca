@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { mapToCanActivate } from '@angular/router';
 import { EditUserComponent } from './components/admin/edit-user/edit-user.component';
+import { ViewBookUserComponent } from './components/home/view-book-user/view-book-user.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { EditUserComponent } from './components/admin/edit-user/edit-user.compon
     ViewBookComponent,
     ViewUserComponent,
     EditUserComponent,
+    ViewBookUserComponent,
   ],
   imports: [
     BrowserModule,

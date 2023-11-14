@@ -62,4 +62,13 @@ export class APIService {
       catchError(error => of(false)) 
     );
   }
+
+  cambiarDisponibilidad(id: number, nuevaDisponibilidad: number): Observable<boolean> {
+    const urlEditarDisponibilidad = `${this.url}/libros/${id}`;
+    return this.http.patch<boolean>(urlEditarDisponibilidad, { disponibilidad: nuevaDisponibilidad })
+      .pipe(
+        map(resp => true),
+        catchError(error => of(false))
+      );
+  }
 }
