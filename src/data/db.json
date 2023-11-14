@@ -6,7 +6,7 @@
       "autor": "F. Scott Fitzgerald",
       "year": 1925,
       "genero": "Novela",
-      "imagenUrl": "../src/assets/imagenes/imagenId3.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId3.jpg",
       "descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan.",
       "disponibilidad": 1
     },
@@ -16,7 +16,7 @@
       "autor": "George Orwell",
       "year": 1949,
       "genero": "Novela",
-      "imagenUrl": "../src/assets/imagenes/imagenId4.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId4.jpg",
       "descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario.",
       "disponibilidad": 1
     },
@@ -26,7 +26,7 @@
       "autor": "Jane Austen",
       "year": 1813,
       "genero": "Novela",
-      "imagenUrl": "../src/assets/imagenes/imagenId5.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId5.jpg",
       "descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy.",
       "disponibilidad": 1
     },
@@ -36,7 +36,7 @@
       "autor": "J.R.R. Tolkien",
       "year": 1937,
       "genero": "Fantasía",
-      "imagenUrl": "../src/assets/imagenes/imagenId6.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId6.jpg",
       "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug.",
       "disponibilidad": 1
     },
@@ -46,7 +46,7 @@
       "autor": "C.S. Lewis",
       "year": 1950,
       "genero": "Fantasía",
-      "imagenUrl": "../src/assets/imagenes/imagenId7.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId7.jpg",
       "descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario.",
       "disponibilidad": 1
     },
@@ -56,7 +56,7 @@
       "autor": "J.R.R. Tolkien",
       "year": 1954,
       "genero": "Fantasía",
-      "imagenUrl": "../src/assets/imagenes/imagenId8.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId8.jpg",
       "descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media.",
       "disponibilidad": 1
     },
@@ -66,7 +66,7 @@
       "autor": "J.K. Rowling",
       "year": 1997,
       "genero": "Fantasía",
-      "imagenUrl": "../src/assets/imagenes/imagenId9.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId9.jpg",
       "descripcion": "La historia de Harry Potter, un niño que descubre que es un mago y comienza su educación en el Colegio Hogwarts de Magia y Hechicería.",
       "disponibilidad": 1
     },
@@ -76,7 +76,7 @@
       "autor": "Dan Brown",
       "year": 2003,
       "genero": "Misterio",
-      "imagenUrl": "../src/assets/imagenes/imagenId10.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId10.jpg",
       "descripcion": "La historia del simbologista Robert Langdon, quien se ve envuelto en una búsqueda de un secreto antiguo.",
       "disponibilidad": 1
     },
@@ -86,7 +86,7 @@
       "autor": "Paula Hawkins",
       "year": 2015,
       "genero": "Suspenso",
-      "imagenUrl": "../src/assets/imagenes/imagenId11.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId11.jpg",
       "descripcion": "La historia de Rachel Watson, una mujer que se ve involucrada en la desaparición de una mujer a la que observa desde el tren.",
       "disponibilidad": 1
     },
@@ -96,7 +96,7 @@
       "autor": "Gillian Flynn",
       "year": 2012,
       "genero": "Suspenso",
-      "imagenUrl": "../src/assets/imagenes/imagenId12.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId12.jpg",
       "descripcion": "La historia de Nick Dunne, un hombre cuya esposa Amy desaparece en su quinto aniversario de bodas.",
       "disponibilidad": 1
     },
@@ -106,7 +106,7 @@
       "autor": "Paulo Coelho",
       "year": 1988,
       "genero": "Novela",
-      "imagenUrl": "../src/assets/imagenes/imagenId13.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId13.jpg",
       "descripcion": "La historia de Santiago, un joven pastor que sueña con encontrar un tesoro y emprende un viaje por el desierto.",
       "disponibilidad": 1
     },
@@ -116,7 +116,7 @@
       "autor": "John Green",
       "year": 2012,
       "genero": "Novela",
-      "imagenUrl": "../src/assets/imagenes/imagenId14.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId14.jpg",
       "descripcion": "La historia de Hazel Grace Lancaster, una adolescente con cáncer, y su relación con Augustus Waters.",
       "disponibilidad": 1
     },
@@ -126,7 +126,7 @@
       "autor": "Suzanne Collins",
       "year": 2008,
       "genero": "Ciencia ficción",
-      "imagenUrl": "../src/assets/imagenes/imagenId15.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId15.jpg",
       "descripcion": "La historia de Katniss Everdeen, una joven que se ve obligada a participar en un juego mortal transmitido por televisión.",
       "disponibilidad": 1
     },
@@ -136,7 +136,7 @@
       "autor": "Veronica Roth",
       "year": 2011,
       "genero": "Ciencia ficción",
-      "imagenUrl": "../src/assets/imagenes/imagenId16.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId16.jpg",
       "descripcion": "La historia de Beatrice Prior, una joven que vive en una sociedad dividida en facciones y debe enfrentarse a una elección que cambiará su vida.",
       "disponibilidad": 1
     },
@@ -146,7 +146,7 @@
       "autor": "James Dashner",
       "year": 2009,
       "genero": "Ciencia ficción",
-      "imagenUrl": "../src/assets/imagenes/imagenId17.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId17.jpg",
       "descripcion": "La historia de Thomas, un adolescente que se despierta en un lugar llamado el Área, rodeado de un laberinto.",
       "disponibilidad": 1
     },
@@ -156,7 +156,7 @@
       "autor": "Markus Zusak",
       "year": 2005,
       "genero": "Novela",
-      "imagenUrl": "../src/assets/imagenes/imagenId18.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId18.jpg",
       "descripcion": "La historia de Liesel Meminger, una niña que roba libros durante la Segunda Guerra Mundial.",
       "disponibilidad": 1
     },
@@ -166,7 +166,7 @@
       "autor": "Khaled Hosseini",
       "year": 2003,
       "genero": "Novela",
-      "imagenUrl": "../src/assets/imagenes/imagenId19.jpg",
+      "imagenUrl": "../assets/imagenes/imagenId19.jpg",
       "descripcion": "La historia de Amir, un niño afgano que vive en Kabul y su amistad con Hassan, un niño hazara.",
       "disponibilidad": 1
     }

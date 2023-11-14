@@ -21,7 +21,7 @@
         <td>{{ libro.autor }}</td>
         <td>{{ libro.year }}</td>
         <td>{{ libro.genero }}</td>
-        <td><img src="{{libro.imagenUrl}}"></td>
+        <td><img src={{libro.imagenUrl}}></td>
         <td>{{ libro.descripcion }}</td>
         <td><button class="delete-button" (click) = "deleteLibro(libro.id!)">X</button></td>
         <td><button class="edit-button" (click)="editLibro(libro)">E</button></td>
