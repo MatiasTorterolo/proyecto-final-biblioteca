@@ -8,7 +8,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId3.jpg",
       "descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan.",
-      "disponibilidad": 0
+      "disponibilidad": 1
     },
     {
       "id": "4",
@@ -18,7 +18,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId4.jpg",
       "descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario.",
-      "disponibilidad": 0
+      "disponibilidad": 1
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId6.jpg",
       "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": "7",
@@ -58,7 +58,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId8.jpg",
       "descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": "9",

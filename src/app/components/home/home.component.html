@@ -2,7 +2,7 @@
     <app-nav-bar></app-nav-bar>
     <app-noticias-aside></app-noticias-aside>
         <div class="principal">
-             <app-view-book-user [inputLibros]="libro"> </app-view-book-user>
+             <app-view-book-user [inputLibros]="libro" (libroToBorrow)="borrowLibro($event)"></app-view-book-user>
         </div>    
     <app-footer></app-footer> 
  </div>

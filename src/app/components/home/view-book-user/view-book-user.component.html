@@ -14,15 +14,18 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let libro of inputLibros">    
-          <td [style.background]="libro.disponibilidad == 1 ? 'green' : 'red' "[style.color]="'white'">{{ libro.nombre }}</td>
-          <td>{{ libro.autor }}</td>
-          <td>{{ libro.year }}</td>
-          <td>{{ libro.genero }}</td>
-          <td><img src={{libro.imagenUrl}}></td>
-          <td>{{ libro.descripcion }}</td>
-          <td><button class="borrow-button" (click)= "borrowLibro(libro.id!)">Pedir</button></td>
+        <tr *ngFor="let libro of inputLibros"> 
+            <ng-container *ngIf="libro.disponibilidad == 1">
+                <td>{{ libro.nombre }}</td>
+                <td>{{ libro.autor }}</td>
+                <td>{{ libro.year }}</td>
+                <td>{{ libro.genero }}</td>
+                <td><img src={{libro.imagenUrl}}></td>
+                <td>{{ libro.descripcion }}</td>
+                <td><button class="borrow-button" (click)= "borrowLibro(libro.id!)">Pedir</button></td>
+            </ng-container>
         </tr>
+
       </tbody>
     </table>
 </div> 

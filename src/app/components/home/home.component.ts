@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 import { NavBarComponent } from 'src/app/shared/nav-bar/nav-bar.component';
 import { APIService } from 'src/app/core/services/api.service';
 import { MatDialog } from '@angular/material/dialog';
 import { Libro } from 'src/app/core/Models';
 import { lastValueFrom } from 'rxjs';
-import { EditBookComponent } from '../admin/edit-book/edit-book.component';
+import { ViewBookUserComponent } from './view-book-user/view-book-user.component';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
