@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Usuario } from '../Models';
+import { Noticia, Usuario } from '../Models';
 import { lastValueFrom } from 'rxjs';
 import { APIService } from './api.service';
+import { NewsService } from './news.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class AuthService {
 
   private usuario: Usuario | null | undefined = null;
 
-  constructor(private apiService: APIService) { }
+  constructor(private apiService: APIService, private newsService: NewsService) { }
 
 
   /* currentUsuario
@@ -66,9 +67,33 @@ export class AuthService {
     return isRegister;
   }
 
+  public async postNew(news: Noticia): Promise<boolean>{
+
+    let isUpdate = false;
+
+    try {
+
+      let apiResponse = this.newsService.post(news);
+
+      let newsResponse = await lastValueFrom(apiResponse);
+
+      if(newsResponse){
+        isUpdate = true;
+      }
+    } catch (error) {
+      throw error;
+    }
+
+    return isUpdate;
+  }
+
   public logOut() {
     this.usuario = undefined;
     localStorage.removeItem('token');
+  }
+
+  public getUserToken(): number {
+      return Number(localStorage.getItem('token'))
   }
 
   public isAuthorized(): boolean{

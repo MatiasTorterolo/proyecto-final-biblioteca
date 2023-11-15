@@ -1,1 +1,10 @@
-<p>noticias-aside works!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<div class="news-container">
+  <div>
+    <H2>Libros</H2>
+    <article>
+      <h4>{{ titulo() }}</h4>
+      <p>{{ contenido() }}</p>
+    </article>
+  </div>
+  <app-add-notice *ngIf="esAdmin"  />
+</div>

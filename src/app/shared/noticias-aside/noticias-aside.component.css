@@ -1,3 +1,4 @@
-html{
-    background-color: blueviolet;
+.news-container {
+    display: flex;
+    justify-content: space-around;
 }

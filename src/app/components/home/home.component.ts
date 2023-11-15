@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { NavBarComponent } from 'src/app/shared/nav-bar/nav-bar.component';
 import { APIService } from 'src/app/core/services/api.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Libro } from 'src/app/core/Models';
+import { Libro, Noticia } from 'src/app/core/Models';
 import { lastValueFrom } from 'rxjs';
 import { EditBookComponent } from '../admin/edit-book/edit-book.component';
+import { NewsService } from 'src/app/core/services/news.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,7 +13,7 @@ import { EditBookComponent } from '../admin/edit-book/edit-book.component';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private apiService: APIService, private dialog: MatDialog) { }
+  constructor(private apiService: APIService, private dialog: MatDialog, private newsService: NewsService) { }
 
   public libro: Array<Libro> = [];
 
@@ -21,7 +22,7 @@ export class HomeComponent implements OnInit {
     this.getLibros();
 
   }
-  
+
   public async getLibros() {
 
     try {
