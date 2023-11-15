@@ -1,1 +1,45 @@
-<p>edit-user works!</p>
+
+<div>
+    <h2 mat-dialog-title class="custom-dialog-title">Editar Usuario</h2>
+
+    <div mat-dialog-content>
+
+        <form (ngSubmit)="editUsuario()" class="custom-form">
+
+            <td>{{ usuario.tipoDeCuenta }}</td>
+
+            <div class="form-field">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" [value]="usuario.nombre" [(ngModel)]="usuario.nombre" required>
+            </div>
+            
+            <div class="form-field">
+                <label for="lastname">Apellido:</label>
+                <input type="text" id="lastname" name="lastname" [value]="usuario.apellido" [(ngModel)]="usuario.apellido" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" [value]="usuario.email" [(ngModel)]="usuario.email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" [value]="usuario.password" [(ngModel)]="usuario.password">
+            </div>                 
+
+            <div class="form-field">
+                <label for="tipoDeCuenta">tipo De Cuenta:</label>
+                <select name="tipoDeCuenta" id="tipoDeCuenta" [value]="usuario.tipoDeCuenta" [(ngModel)]="usuario.tipoDeCuenta" required>
+                    <option value="Admin">Administracion</option>
+                    <option value="Usuario">Usuario</option>
+                </select>
+            </div>
+
+            <button type="submit" class="custom-button">Guardar Cambios</button>
+        </form>
+    <div mat-dialog-actions>
+        
+        <button mat-button (click)="closeDialog()" class="custom-button" >Cancelar</button>
+    </div>
+</div>

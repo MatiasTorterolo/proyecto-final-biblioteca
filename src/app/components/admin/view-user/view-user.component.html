@@ -1,1 +1,29 @@
-<p>view-user works!</p>
+<div>
+    <H2>Usuarios</H2>
+    <table class="mi-tabla">
+      <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Tipo de cuenta</th>
+            <th>Eliminar</th>
+            <th>Editar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of inputUsuarios">   
+            <td>{{ usuario.id }}</td> 
+            <td>{{ usuario.nombre }}</td>
+            <td>{{ usuario.apellido }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.password }}</td>
+            <td>{{ usuario.tipoDeCuenta }}</td>
+            <td><button class="delete-button" (click) = "deleteUsuario(usuario.id!)">Borrar</button></td>
+            <td><button class="edit-button" (click)="editUsuario(usuario)">Editar</button></td>
+        </tr>
+      </tbody>
+    </table>
+   </div> 

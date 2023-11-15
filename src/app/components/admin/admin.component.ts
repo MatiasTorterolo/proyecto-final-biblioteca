@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { NavBarComponent } from 'src/app/shared/nav-bar/nav-bar.component';
 import { APIService } from 'src/app/core/services/api.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Libro } from 'src/app/core/Models';
+import { Libro, Usuario } from 'src/app/core/Models';
 import { lastValueFrom } from 'rxjs';
 import { EditBookComponent } from '../admin/edit-book/edit-book.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 @Component({
   selector: 'app-admin',
@@ -15,13 +16,52 @@ export class AdminComponent {
   constructor(private apiService: APIService, private dialog: MatDialog) { }
 
   public libro: Array<Libro> = [];
+  public usuario: Array<Usuario> = [];
 
   ngOnInit(): void {
 
     this.getLibros();
+    this.getUsuarios();
 
   }
   
+
+  public async getUsuarios() {
+
+    try {
+
+      let responseApi = this.apiService.getUsuarios();
+
+      const data = await lastValueFrom(responseApi);
+
+      this.usuario = data.map((usuarioData: any) => new Usuario(usuarioData));
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+
+public editUsuario(usuario: Usuario) {
+
+  const dialogRef = this.dialog.open(EditUserComponent, { data: usuario, height: '400px', width: '350px' });
+
+  dialogRef.afterClosed().subscribe(result => {
+    console.log('El cuadro de diálogo se cerró con resultado:', result);
+  });
+}
+
+public deleteUsuario(id: number){
+
+  this.apiService.deleteUsuario(id).subscribe({
+    next: ()=>{
+      this.getUsuarios();
+      alert("Usuario eliminado con exito");
+    },
+    error: ()=> alert("No se ha podido eliminar el usuario")
+  })
+}
+
   public async getLibros() {
 
     try {

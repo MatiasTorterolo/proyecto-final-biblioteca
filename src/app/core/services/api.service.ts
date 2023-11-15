@@ -17,6 +17,7 @@ export class APIService {
   private url: string = 'http://localhost:3000'
 
   constructor(private http: HttpClient) { }
+
   getNextId(): Observable<number> {
     return this.http.get<Usuario[]>(`${this.url}/usuarios`).pipe(map(data => data.length + 1));
   }
@@ -28,6 +29,19 @@ export class APIService {
   addUsuario(createUsuario: Usuario): Observable<boolean> {
     const urlAdd = `${this.url}/usuarios`;
     return this.http.post<boolean>(urlAdd, createUsuario);
+  }
+
+  editUsuario(id: number, updateUsuario: Usuario): Observable<boolean> {
+    const urlEdit = `${this.url}/usuarios/${id}`;
+    return this.http.put<boolean>(urlEdit, updateUsuario);
+  }
+
+  deleteUsuario(id: number): Observable<boolean> {
+    return this.http.delete(`${this.url}/usuarios/${id}`)
+    .pipe(
+      map(resp => true), 
+      catchError(error => of(false)) 
+    );
   }
 
   getUsuarioToAuth(email: string, password: string): Observable<Usuario[]>{

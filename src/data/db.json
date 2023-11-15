@@ -172,12 +172,12 @@
     },
     {
       "id": 20,
-      "nombre": "guille",
-      "autor": "gg",
+      "nombre": "las locas aventuras de guille",
+      "autor": "gl",
       "year": "5758",
       "genero": "Suspenso",
       "imagenUrl": "../assets/imagenes/libroNuevo7.jpg",
-      "descripcion": "chichainas",
+      "descripcion": "chichainas malabailas",
       "disponibilidad": 1
     }
   ],
@@ -188,7 +188,7 @@
       "apellido": "Doe",
       "email": "johndoe@example.com",
       "password": "password123",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 2,
@@ -196,7 +196,7 @@
       "apellido": "Smith",
       "email": "janesmith@example.com",
       "password": "qwerty",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 3,
@@ -204,7 +204,7 @@
       "apellido": "Johnson",
       "email": "robertjohnson@example.com",
       "password": "abc123",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Admin"
     },
     {
       "id": 4,
@@ -212,7 +212,7 @@
       "apellido": "Davis",
       "email": "emilydavis@example.com",
       "password": "password456",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 5,
@@ -220,7 +220,7 @@
       "apellido": "Wilson",
       "email": "michaelwilson@example.com",
       "password": "123456",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Admin"
     },
     {
       "id": 6,
@@ -228,7 +228,7 @@
       "apellido": "Taylor",
       "email": "jessicataylor@example.com",
       "password": "iloveyou",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 7,
@@ -236,15 +236,15 @@
       "apellido": "Anderson",
       "email": "davidanderson@example.com",
       "password": "qwerty123",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
-      "id": 8,
       "nombre": "Sarah",
       "apellido": "Thomas",
       "email": "sarahthomas@example.com",
       "password": "password789",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Usuario",
+      "id": 8
     },
     {
       "id": 9,
@@ -252,7 +252,7 @@
       "apellido": "Jackson",
       "email": "christopherjackson@example.com",
       "password": "abcxyz",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 10,
@@ -260,7 +260,7 @@
       "apellido": "White",
       "email": "oliviawhite@example.com",
       "password": "letmein",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Admin"
     },
     {
       "id": 11,
@@ -268,7 +268,7 @@
       "apellido": "Harris",
       "email": "danielharris@example.com",
       "password": "password1",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 12,
@@ -276,7 +276,7 @@
       "apellido": "Martin",
       "email": "sophiamartin@example.com",
       "password": "123abc",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 13,
@@ -284,7 +284,7 @@
       "apellido": "Thompson",
       "email": "matthewthompson@example.com",
       "password": "qazwsx",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Admin"
     },
     {
       "id": 14,
@@ -292,7 +292,7 @@
       "apellido": "Garcia",
       "email": "avagarcia@example.com",
       "password": "pass123",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 15,
@@ -300,7 +300,7 @@
       "apellido": "Lee",
       "email": "andrewlee@example.com",
       "password": "987654",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Admin"
     },
     {
       "id": 16,
@@ -308,7 +308,7 @@
       "apellido": "Clark",
       "email": "isabellaclark@example.com",
       "password": "hello123",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 17,
@@ -316,7 +316,7 @@
       "apellido": "Rodriguez",
       "email": "ethanrodriguez@example.com",
       "password": "qwertyuiop",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 18,
@@ -324,7 +324,7 @@
       "apellido": "Lopez",
       "email": "mialopez@example.com",
       "password": "ilovemusic",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Admin"
     },
     {
       "id": 19,
@@ -332,7 +332,7 @@
       "apellido": "Hall",
       "email": "jameshall@example.com",
       "password": "password2",
-      "tipo de cuenta": "Usuario"
+      "tipoDeCuenta": "Usuario"
     },
     {
       "id": 20,
@@ -340,7 +340,7 @@
       "apellido": "Young",
       "email": "charlotteyoung@example.com",
       "password": "zxcvbnm",
-      "tipo de cuenta": "Admin"
+      "tipoDeCuenta": "Admin"
     },
     {
       "id": 21,
