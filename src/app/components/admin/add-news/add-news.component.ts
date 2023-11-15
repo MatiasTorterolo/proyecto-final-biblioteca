@@ -28,8 +28,28 @@ export class AddNoticeComponent {
 
     if(this.newsForm.valid) {
 
-      this.news = { titulo: this.newsForm.get('titulo')?.value, contenido: this.newsForm.get('contenido')?.value };
+      const url: string = '../assets/imagenes'
 
+
+      this.news = { titulo: this.newsForm.get('titulo')?.value, contenido: this.newsForm.get('contenido')?.value, imagenUrl: this.newsForm.get('imagenUrl')?.value };
+      
+      if (this.news.imagenUrl != ''){
+        switch ( this.news.imagenUrl ) {
+          case "Novedad":
+            this.news.imagenUrl = url + "/1novedad.jpg";
+              break;
+          case "Nuevo Libro":
+            this.news.imagenUrl = url + "/1nuevoLibro.jpg"
+              break;
+          case "Atencion":
+            this.news.imagenUrl = url + "/1atencion.jpg"
+              break;
+          default:
+            this.news.imagenUrl = url + "/1predeterminado.jpg"
+              break;
+        }
+      }
+      
       try{
 
         let isUpdate: boolean = await this.authService.postNew(this.news);
@@ -40,7 +60,7 @@ export class AddNoticeComponent {
         }
         
     
-       } catch (error){
+        } catch (error){
         console.log(error);
       }
     }

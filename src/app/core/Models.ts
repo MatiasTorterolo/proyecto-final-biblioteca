@@ -49,11 +49,11 @@ export class Noticia implements INoticias {
     
     titulo: string = '';
     contenido: string = '';
-    //imagenUrl: string = '';
+    imagenUrl: string = '';
 
     constructor (noticia ? : any){
         this.titulo = noticia == undefined ? null : noticia.titulo;
         this.contenido = noticia == undefined ? null : noticia.contenido;
-        //this.imagenUrl = noticia == undefined ? null : noticia.imagenUrl;
+        this.imagenUrl = noticia == undefined ? null : noticia.imagenUrl;
     }
 }

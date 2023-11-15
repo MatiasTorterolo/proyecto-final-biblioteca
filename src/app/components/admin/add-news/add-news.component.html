@@ -16,6 +16,15 @@
 
         </div>
 
+        <div class="form-field">
+            <label for="imagenUrl">Imagen:</label>
+            <select name="image" id="image" formControlName="imagenUrl" placeholder="Elije una Imagen">
+              <option value="Novedad">Novedad</option>
+              <option value="Nuevo Libro">Nuevo Libro</option>
+              <option value="Atencion">Atencion</option>
+            </select>
+          </div>
+
         <button type="submit" [disabled]="newsForm.invalid" class="news-button">Publicar noticia</button> 
   <!--
         <div class="form-group">

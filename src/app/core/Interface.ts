@@ -24,6 +24,6 @@ export interface INoticias{
     
     titulo: string;
     contenido: string;
-    //imagenUrl: string;
+    imagenUrl: string;
 
 }
