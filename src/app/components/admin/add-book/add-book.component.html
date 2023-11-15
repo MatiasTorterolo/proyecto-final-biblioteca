@@ -1,30 +1,52 @@
 <div>
     <h2 class="custom-dialog-title">Agregar Libro</h2>
+    
     <form autocomplete="off" class="login-form" (ngSubmit)="createLibro()">
   
       <div class="form-field">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" [(ngModel)]="newLibro.nombre" required>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="newLibro.nombre" required>
       </div>
   
       <div class="form-field">
-        <label for="autor">Autor:</label>
-        <input type="text" id="autor" name="autor" [(ngModel)]="newLibro.autor" required>
+        <label for="author">Autor:</label>
+        <input type="text" id="author" name="author" [(ngModel)]="newLibro.autor" required>
       </div>
   
       <div class="form-field">
-        <label for="dni">Año:</label>
+        <label for="year">Año:</label>
         <input type="text" id="year" name="year" [(ngModel)]="newLibro.year" required>
       </div>
   
       <div class="form-field">
-        <label for="ciudad">Genero:</label>
-        <input type="text" id="genero" name="genero" [(ngModel)]="newLibro.genero" required>
+        <label for="gender">Genero:</label>
+        <select name="gender" id="gender" [value]="newLibro.genero" [(ngModel)]="newLibro.genero" required>
+          <option value="Suspenso">Suspenso</option>
+          <option value="Novela">Novela</option>
+          <option value="Misterio">Misterio</option>
+          <option value="Fantasía">Fantasía</option>
+          <option value="Ciencia ficción">Ciencia ficción</option>
+          <option value="Historia">Historia</option>
+          <option value="Chinchulines">Chinchulines</option>
+      </select>
       </div>
 
       <div class="form-field">
-        <label for="ciudad">Descripcion:</label>
-        <input type="text" id="descripcion" name="descripcion" [(ngModel)]="newLibro.descripcion" required>
+        <label for="image">Imagen:</label>
+        <select name="image" id="image" [value]="newLibro.imagenUrl" [(ngModel)]="newLibro.imagenUrl" required>
+          <option value="Suspenso">Suspenso</option>
+          <option value="Novela">Novela</option>
+          <option value="Misterio">Misterio</option>
+          <option value="Fantasía">Fantasía</option>
+          <option value="Ciencia ficción">Ciencia ficción</option>
+          <option value="Historia">Historia</option>
+          <option value="Chinchulines">Chinchulines</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="description">Descripcion:</label>
+        <input type="text" id="description" name="description" [(ngModel)]="newLibro.descripcion" required>
       </div>
   
       <button type="submit" class="login-button">Crear Libro</button>

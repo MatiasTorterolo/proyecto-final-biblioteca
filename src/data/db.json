@@ -8,7 +8,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId3.jpg",
       "descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": "4",
@@ -28,7 +28,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId5.jpg",
       "descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": "6",
@@ -58,7 +58,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId8.jpg",
       "descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media.",
-      "disponibilidad": 0
+      "disponibilidad": 1
     },
     {
       "id": "9",
@@ -152,7 +152,7 @@
     },
     {
       "id": 18,
-      "nombre": "The Book Thief",
+      "nombre": "The Book Thiefazo",
       "autor": "Markus Zusak",
       "year": 2005,
       "genero": "Novela",
@@ -164,10 +164,20 @@
       "id": 19,
       "nombre": "The Kite Runner",
       "autor": "Khaled Hosseini",
-      "year": 2003,
-      "genero": "Novela",
-      "imagenUrl": "../assets/imagenes/imagenId19.jpg",
+      "year": 1998,
+      "genero": "Historia",
+      "imagenUrl": "../assets/imagenes/libritox.jpg",
       "descripcion": "La historia de Amir, un niño afgano que vive en Kabul y su amistad con Hassan, un niño hazara.",
+      "disponibilidad": 1
+    },
+    {
+      "id": 20,
+      "nombre": "guille",
+      "autor": "gg",
+      "year": "5758",
+      "genero": "Suspenso",
+      "imagenUrl": "../assets/imagenes/libroNuevo7.jpg",
+      "descripcion": "chichainas",
       "disponibilidad": 1
     }
   ],

@@ -1,1 +1,58 @@
-<p>edit-book works!</p>
+
+<div>
+    <h2 mat-dialog-title class="custom-dialog-title">Editar Libro</h2>
+
+    <div mat-dialog-content>
+
+        <form (ngSubmit)="editLibro()" class="custom-form">
+
+            <div class="form-field">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" [value]="libro.nombre" [(ngModel)]="libro.nombre" required>
+            </div>
+            
+            <div class="form-field">
+                <label for="author">Autor:</label>
+                <input type="text" id="author" name="author" [value]="libro.autor" [(ngModel)]="libro.autor" required>
+            </div>
+
+            <div class="form-field">
+                <label for="year">Año:</label>
+                <input type="number" id="year" name="year" [value]="libro.year" [(ngModel)]="libro.year" required>
+            </div>
+
+            <div class="form-field">
+                <label for="gender">Genero:</label>
+                <select name="gender" id="gender" [value]="libro.genero" [(ngModel)]="libro.genero" required>
+                    <option value="Suspenso">Suspenso</option>
+                    <option value="Novela">Novela</option>
+                    <option value="Misterio">Misterio</option>
+                    <option value="Fantasía">Fantasía</option>
+                    <option value="Ciencia ficción">Ciencia ficción</option>
+                    <option value="Historia">Historia</option>
+                    <option value="Chinchulines">Chinchulines</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="image">Imagen:</label>
+                <input type="file" id="image" name="image" [value]="nuevaImagen" [(ngModel)]="nuevaImagen">
+            </div>                 
+
+            <div class="form-field">
+                <label for="description">Descripción:</label>
+                <input type="text" id="description" name="description" [value]="libro.descripcion" [(ngModel)]="libro.descripcion" required>
+            </div>
+
+            <div class="form-field">
+                <label for="availability">Disponibilidad:</label>
+                <input type="number" id="availability" name="availability" [value]="libro.disponibilidad" [(ngModel)]="libro.disponibilidad" required>
+            </div>
+
+            <button type="submit" class="custom-button">Guardar Cambios</button>
+        </form>
+    <div mat-dialog-actions>
+        
+        <button mat-button (click)="closeDialog()" class="custom-button" >Cancelar</button>
+    </div>
+</div>
