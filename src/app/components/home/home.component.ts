@@ -5,10 +5,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { Libro, Noticia } from 'src/app/core/Models';
 import { lastValueFrom } from 'rxjs';
 import { ViewBookUserComponent } from './view-book-user/view-book-user.component';
-
-
 import { EditBookComponent } from '../admin/edit-book/edit-book.component';
 import { NewsService } from 'src/app/core/services/news.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

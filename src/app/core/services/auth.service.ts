@@ -67,25 +67,7 @@ export class AuthService {
     return isRegister;
   }
 
-  public async postNew(news: Noticia): Promise<boolean>{
 
-    let isUpdate = false;
-
-    try {
-
-      let apiResponse = this.newsService.post(news);
-
-      let newsResponse = await lastValueFrom(apiResponse);
-
-      if(newsResponse){
-        isUpdate = true;
-      }
-    } catch (error) {
-      throw error;
-    }
-
-    return isUpdate;
-  }
 
   public logOut() {
     this.usuario = undefined;

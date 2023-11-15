@@ -30,7 +30,7 @@ import { AddNoticeComponent } from './components/admin/add-news/add-news.compone
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    NoticiasAsideComponent,
+    NoticiasAsideComponent, // <-- Add the @Component decorator here
     PopularSectionComponent,
     NavBarComponent,
     HomeComponent,

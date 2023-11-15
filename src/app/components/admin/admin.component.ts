@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NavBarComponent } from 'src/app/shared/nav-bar/nav-bar.component';
 import { APIService } from 'src/app/core/services/api.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Libro, Usuario } from 'src/app/core/Models';
+import { Libro, Usuario, Noticia } from 'src/app/core/Models';
 import { lastValueFrom } from 'rxjs';
 import { EditBookComponent } from '../admin/edit-book/edit-book.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+
 
 @Component({
   selector: 'app-admin',
@@ -17,11 +18,13 @@ export class AdminComponent {
 
   public libro: Array<Libro> = [];
   public usuario: Array<Usuario> = [];
+  public noticia: Array<Noticia> = [];
 
   ngOnInit(): void {
 
     this.getLibros();
     this.getUsuarios();
+    this.getNoticias();
 
   }
   
@@ -119,4 +122,32 @@ public deleteUsuario(id: number){
       error: ()=> alert("No se ha podido devolver el libro")
     })
   }
+
+  public async getNoticias() {
+
+    try {
+
+      let responseApi = this.apiService.getNoticias();
+
+      const data = await lastValueFrom(responseApi);
+
+      this.noticia = data.map((noticiaData: any) => new Noticia(noticiaData));
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  public createNoticia(noticia: Noticia) {
+
+    this.apiService.addNoticia(noticia).subscribe({
+      next: () => {
+        this.getNoticias();
+        alert("Noticia creado con exito");
+      },
+      error: () => alert("No se ha podido crear el noticia")
+    })
+  }
+
+
 }

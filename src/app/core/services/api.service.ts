@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, first, map, of } from 'rxjs';
-import { Libro, Usuario } from '../Models';
+import { Libro, Usuario, Noticia } from '../Models';
 
 
 @Injectable({
@@ -89,4 +89,15 @@ export class APIService {
         catchError(error => of(false))
       );
   }
+
+  getNoticias(): Observable<Noticia[]> {
+    return this.http.get<Noticia[]>(`${this.url}/noticias`);
+  }
+
+  addNoticia(createNoticia: Noticia): Observable<boolean> {
+    const urlAdd = `${this.url}/noticias`;
+    return this.http.post<boolean>(urlAdd, createNoticia);
+  }
+
+
 }

@@ -1,10 +1,9 @@
-<div class="news-container">
-  <div>
-    <H2>Libros</H2>
-    <article>
-      <h4>{{ titulo() }}</h4>
-      <p>{{ contenido() }}</p>
-    </article>
-  </div>
-  <app-add-notice *ngIf="esAdmin"  />
-</div>
+<div>
+  <H2>Noticias</H2>
+      <div *ngFor="let noticia of inputNoticias">   
+          <h3>{{ noticia.titulo }}</h3> 
+          <img src="{{noticia.imagenUrl}}">
+          <p>{{ noticia.contenido }}</p>
+      </div>
+ </div> 
+
