@@ -92,27 +92,23 @@ export class RegisterComponent{
 
   public async onSubmit() {
 
-
     if(this.loginForm.valid) {
 
       this.usuario = { id: this.newUserId, nombre: this.loginForm.get('nombre')?.value, apellido: this.loginForm.get('apellido')?.value, email: this.loginForm.get('email')?.value, password: this.loginForm.get('confirmPassword')?.value, tipoDeCuenta: "Usuario"};
 
+      try{
+
+        let isRegister: boolean = await this.authService.register(this.usuario);
+    
+        if(isRegister){
+          this.router.navigate(['/landing']); //este navigate hay que cambiarlo tmb
+        }
+        
+    
+       } catch (error){
+        console.log(error);
+      }
     }
-
-    
-   try{
-
-    let isRegister: boolean = await this.authService.register(this.usuario);
-
-    if(isRegister){
-      this.router.navigate(['/landing']); //este navigate hay que cambiarlo tmb
-    }
-    
-
-   } catch (error){
-    console.log(error);
-   }
-    
   }
 
   public navigateToLogin(){

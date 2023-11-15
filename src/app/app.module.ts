@@ -19,9 +19,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
-import { mapToCanActivate } from '@angular/router';
 import { EditUserComponent } from './components/admin/edit-user/edit-user.component';
 import { ViewBookUserComponent } from './components/home/view-book-user/view-book-user.component';
+import { AddNoticeComponent } from './components/admin/add-news/add-news.component';
+
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { ViewBookUserComponent } from './components/home/view-book-user/view-boo
     ViewUserComponent,
     EditUserComponent,
     ViewBookUserComponent,
+    AddNoticeComponent
   ],
   imports: [
     BrowserModule,

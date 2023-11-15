@@ -19,3 +19,11 @@ export interface IUsuarios{
     password: string;
     tipoDeCuenta: string;
 }
+
+export interface INoticias{
+    
+    titulo: string;
+    contenido: string;
+    //imagenUrl: string;
+
+}
