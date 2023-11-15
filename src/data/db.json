@@ -341,12 +341,8 @@
       "tipoDeCuenta": "Usuario"
     }
   ],
-  "noticias": [
-    {
-      "id": 1,
-      "titulo": "Nuevo libro disponible", 
-      "contenido": "nos acotnece tener nuevo libro disponible",
-      "imagen": "../assets/imagenes/imagenId19.jpg"
-    }
-  ]
+  "noticias": {
+    "titulo": "Noticia",
+    "contenido": "Importante contenido"
+  }
 }

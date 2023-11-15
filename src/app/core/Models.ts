@@ -1,4 +1,4 @@
-import {IUsuarios, ILibros} from "./Interface";
+import {IUsuarios, ILibros, INoticias} from "./Interface";
 
 export class Usuario implements IUsuarios{
         id?: number | undefined;
@@ -16,7 +16,7 @@ export class Usuario implements IUsuarios{
         this.apellido = usuario == undefined ? null : usuario.apellido;
         this.email = usuario == undefined ? null : usuario.email;
         this.password = usuario == undefined ? null : usuario.password;
-        this.tipoDeCuenta = usuario == undefined ? null : usuario.tipoDeCuenta;
+        this.tipoDeCuenta = usuario == undefined ? null : usuario["tipo de cuenta"];
     } 
 }
 
@@ -43,4 +43,17 @@ export class Libro implements ILibros{
         this.descripcion = libro == undefined ? null : libro.descripcion;
         this.disponibilidad = libro == undefined ? null : libro.disponibilidad;
     } 
+}
+
+export class Noticia implements INoticias {
+    
+    titulo: string = '';
+    contenido: string = '';
+    //imagenUrl: string = '';
+
+    constructor (noticia ? : any){
+        this.titulo = noticia == undefined ? null : noticia.titulo;
+        this.contenido = noticia == undefined ? null : noticia.contenido;
+        //this.imagenUrl = noticia == undefined ? null : noticia.imagenUrl;
+    }
 }

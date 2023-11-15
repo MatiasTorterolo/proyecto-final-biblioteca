@@ -1,0 +1,40 @@
+<div class = "notice-container">
+    <h2>Crear Noticia</h2>
+
+    <form autocomplete="off" [formGroup]="newsForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+
+            <label for="titulo">Título</label>
+            <input type="text" formControlName="titulo" placeholder="Ingresa el título"/>
+
+        </div> 
+
+        <div class="form-group">
+
+            <label for="contenido">Contenido</label>
+            <input type="text" formControlName="contenido" placeholder="Ingresa una descripción"/>
+
+        </div>
+
+        <button type="submit" [disabled]="newsForm.invalid" class="news-button">Publicar noticia</button> 
+  <!--
+        <div class="form-group">
+
+            <label>Imagen</label>
+            <input (change)="capturarFile($event)" formControlName="imagenUrl" type="file" placeholder="Seleccione una imagen"/>
+    
+        </div>
+
+        <div call="form-group" *ngIf="previsualizacion" >
+
+            <img width="100px" src="previsualizacion" alt="">
+
+            <button type="button" (click)="subirArchivo()"></button>
+
+        </div>
+
+        <button type="submit" [disabled]="newsForm.invalid" class="news-button">Publicar noticia</button> 
+    -->
+    </form>
+</div>
+    
