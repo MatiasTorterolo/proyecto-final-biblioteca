@@ -1,0 +1,40 @@
+<form [formGroup]="formLibro">
+    <label for="generoSeleccionado">Filtra por género:</label>
+    <select id="generoSeleccionado" formControlName="generoSeleccionado">
+      <option value="" disabled selected>Elige un género</option>
+      <option *ngFor="let genero of generos" [value]="genero" >{{ genero }}</option>
+    </select>
+   
+  </form>
+  
+  <table>
+    
+    <thead>
+      <tr> 
+        <th>Nombre</th>
+        <th>Autor</th>
+        <th>Género</th>
+        <th>Imagen</th>
+        <th>Descripcion</th>
+        <th>Disponibilidad</th>
+      </tr>
+  
+    </thead>
+    <tbody>
+      <tr *ngFor="let libro of libros">
+        <td>{{ libro.nombre }}</td>  
+        <td>{{ libro.autor }}</td>
+        <td>{{ libro.genero }}</td>
+        <td><img src={{libro.imagenUrl}}></td>
+        <td>{{ libro.descripcion }}</td>
+        <td>{{ libro.disponibilidad }}</td>
+        
+     
+      </tr>
+  
+    </tbody>
+ 
+  </table>
+
+
+ 

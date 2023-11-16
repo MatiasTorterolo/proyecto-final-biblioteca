@@ -1,0 +1,31 @@
+
+<div>
+    <H2>Libros</H2>
+    <table class="mi-tabla">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Año</th>
+          <th>Genero</th>
+          <th>Imagen</th>
+          <th>Descripción</th>
+          <th>Estado</th>
+  
+        </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let libro of inputLibros"> 
+       
+                <td>{{ libro.nombre }}</td>
+                <td>{{ libro.autor }}</td>
+                <td>{{ libro.year }}</td>
+                <td>{{ libro.genero }}</td>
+                <td><img src={{libro.imagenUrl}}></td>
+                <td>{{ libro.descripcion }}</td>
+
+            
+        </tr>
+      </tbody>
+    </table>
+   </div> 

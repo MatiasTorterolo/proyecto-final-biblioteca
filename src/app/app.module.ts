@@ -21,7 +21,10 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { mapToCanActivate } from '@angular/router';
-import { ViewBookUserComponent } from './components/home/home-user/view-book-user/view-book-user.component';
+import { ViewBookUserComponent } from './components/home/view-book-user/view-book-user.component';
+import { EditNoticiasComponent } from './components/admin/edit-noticias/edit-noticias.component';
+import { FiltrargeneroComponent } from './components/home/filtrargenero/filtrargenero.component';
+import { UserComponentComponent } from './components/home/home-user/user-component/user-component.component';
 
 
 @NgModule({
@@ -43,6 +46,9 @@ import { ViewBookUserComponent } from './components/home/home-user/view-book-use
     ViewUserComponent,
     AddUserComponent,
     ViewBookUserComponent,
+    EditNoticiasComponent,
+    FiltrargeneroComponent,
+    UserComponentComponent,
   ],
   imports: [
     BrowserModule,

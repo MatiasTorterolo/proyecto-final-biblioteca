@@ -1,0 +1,22 @@
+form {
+    margin-bottom: 20px; /* Espacio en la parte inferior del formulario */
+  }
+  
+  /* Estilo para la tabla */
+  table {
+    width: 100%; /* La tabla ocupa el ancho completo de su contenedor */
+    border-collapse: collapse; /* Fusiona los bordes de las celdas para un aspecto más limpio */
+    margin-top: 20px; /* Espacio en la parte superior de la tabla */
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  td, th {
+    border: 1px solid #ddd; /* Borde de 1 píxel con un color gris claro */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+  }
+  
+  /* Estilo para las filas impares de la tabla */
+  tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Fondo gris claro para filas impares */
+  }
