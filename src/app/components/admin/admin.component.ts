@@ -149,5 +149,15 @@ public deleteUsuario(id: number){
     })
   }
 
+  public deleteNoticia(id: number){
+
+    this.apiService.deleteNoticia(id).subscribe({
+      next: ()=>{
+        this.getNoticias();
+        alert("Noticia eliminado con exito");
+      },
+      error: ()=> alert("No se ha podido eliminar el noticia")
+    })
+}
 
 }

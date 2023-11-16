@@ -22,16 +22,16 @@ export class AddNoticeComponent {
       if (this.newNoticia.imagenUrl != ''){
         switch ( this.newNoticia.imagenUrl ) {
           case "Novedad":
-            this.newNoticia.imagenUrl = url + "/1novedad.jpg";
+            this.newNoticia.imagenUrl = url + "/1novedad.png";
               break;
           case "Nuevo Libro":
-            this.newNoticia.imagenUrl = url + "/no.jpg"
+            this.newNoticia.imagenUrl = url + "/1nuevoLibro.png"
               break;
           case "Atencion":
-            this.newNoticia.imagenUrl = url + "/noticia3.jpg"
+            this.newNoticia.imagenUrl = url + "/1atencion.png"
               break;
           default:
-            this.newNoticia.imagenUrl = url + "/noticia4.jpg"
+            this.newNoticia.imagenUrl = url + "/1predeterminado.png"
               break;
         }
       }

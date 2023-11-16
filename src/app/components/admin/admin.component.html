@@ -1,6 +1,6 @@
 <div>
     <app-nav-bar></app-nav-bar>
-    <app-noticias-aside></app-noticias-aside>
+    <app-noticias-aside [inputNoticias]="noticia" (noticiaToDelete)="deleteNoticia($event)"></app-noticias-aside>
         <div class="principal">
             <app-add-notice (noticiaToCreate)="createNoticia($event)"></app-add-notice>
              <app-view-book [inputLibros]="libro" (libroToEdit)="editLibro($event)" (libroToDelete)="deleteLibro($event)" (libroToReturn)="returnLibro($event)"> </app-view-book>

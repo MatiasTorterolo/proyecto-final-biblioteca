@@ -99,5 +99,12 @@ export class APIService {
     return this.http.post<boolean>(urlAdd, createNoticia);
   }
 
+  deleteNoticia(id: number): Observable<boolean> {
+    return this.http.delete(`${this.url}/noticias/${id}`)
+    .pipe(
+      map(resp => true), 
+      catchError(error => of(false)) 
+    );
+  }
 
 }

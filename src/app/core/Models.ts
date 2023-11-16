@@ -47,11 +47,13 @@ export class Libro implements ILibros{
 
 export class Noticia implements INoticias {
     
+    id?: number | undefined;
     titulo: string = '';
     contenido: string = '';
     imagenUrl: string = '';
 
     constructor (noticia ? : any){
+        this.id = noticia == undefined ? null : noticia.id;
         this.titulo = noticia == undefined ? null : noticia.titulo;
         this.contenido = noticia == undefined ? null : noticia.contenido;
         this.imagenUrl = noticia == undefined ? null : noticia.imagenUrl;

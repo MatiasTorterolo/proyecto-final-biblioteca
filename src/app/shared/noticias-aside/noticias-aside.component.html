@@ -4,6 +4,10 @@
           <h3>{{ noticia.titulo }}</h3> 
           <img src="{{noticia.imagenUrl}}">
           <p>{{ noticia.contenido }}</p>
+          <div *ngIf="isAdminPage()">
+          <button class="delete-button" (click) = "deleteNoticia(noticia.id!)">Borrar</button>
+        </div>
       </div>
+
  </div> 
 

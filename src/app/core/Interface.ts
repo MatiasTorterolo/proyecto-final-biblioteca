@@ -22,6 +22,7 @@ export interface IUsuarios{
 
 export interface INoticias{
     
+    id?: number | undefined;
     titulo: string;
     contenido: string;
     imagenUrl: string;

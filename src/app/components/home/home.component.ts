@@ -18,11 +18,12 @@ export class HomeComponent implements OnInit {
   constructor(private apiService: APIService, private dialog: MatDialog, private newsService: NewsService) { }
 
   public libro: Array<Libro> = [];
+  public noticia: Array<Noticia> = [];
 
   ngOnInit(): void {
 
     this.getLibros();
-
+    this.getNoticias();
   }
 
   public async getLibros() {
@@ -39,6 +40,32 @@ export class HomeComponent implements OnInit {
       console.error(error);
     }
   }
+
+  public async getNoticias() {
+
+    try {
+
+      let responseApi = this.apiService.getNoticias();
+
+      const data = await lastValueFrom(responseApi);
+
+      this.noticia = data.map((noticiaData: any) => new Noticia(noticiaData));
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  public deleteNoticia(id: number){
+
+    this.apiService.deleteNoticia(id).subscribe({
+      next: ()=>{
+        this.getNoticias();
+        alert("Noticia eliminado con exito");
+      },
+      error: ()=> alert("No se ha podido eliminar el noticia")
+    })
+}
 
   public borrowLibro(id: number): void {
     console.log("funciona el ts de admin component ", id);

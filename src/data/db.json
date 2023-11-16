@@ -353,10 +353,10 @@
   ],
   "noticias": [
     {
-      "id": 1,
-      "titulo": "Nuevo libro disponible",
-      "contenido": "nos acontece tener nuevo libro disponible",
-      "imagen": "../assets/imagenes/imagenId19.jpg"
+      "titulo": "gkgk",
+      "contenido": "gjkggkg",
+      "imagenUrl": "../assets/imagenes/1predeterminado.png",
+      "id": 1
     }
   ]
 }
