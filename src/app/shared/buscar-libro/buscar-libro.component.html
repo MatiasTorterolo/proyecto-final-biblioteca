@@ -1,0 +1,23 @@
+<form [formGroup]="formBuscar">
+    <label for="busqueda">Buscar libro:</label>
+    <input type="text" formControlName="busqueda" placeholder="nombre del libro"/>
+  </form>
+  
+  <table >
+    
+
+    <tbody>
+      <tr *ngFor="let libro of libros">
+        <td>{{ libro.nombre }}</td>  
+        <td>{{ libro.autor }}</td>
+        <td>{{ libro.genero }}</td>
+        <td><img src={{libro.imagenUrl}}></td>
+        <td>{{ libro.descripcion }}</td>
+        <td>{{ libro.disponibilidad }}</td>
+        
+     
+      </tr>
+  
+    </tbody>
+ 
+  </table>

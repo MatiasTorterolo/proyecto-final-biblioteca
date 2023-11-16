@@ -1,0 +1,23 @@
+<div>
+    <h2 class="custom-dialog-title">Cosultas </h2>
+    
+    <form autocomplete="off" class="create-form" (ngSubmit)="createConsulta()">
+  
+      <div class="form-field">
+        <label for="title">Titulo:</label>
+        <input type="text" id="title" name="title" [(ngModel)]="newConsulta.titulo" required>
+      </div>
+  
+      <div class="form-field">
+        <label for="content">Contenido:</label>
+        <input type="text" id="content" name="content" [(ngModel)]="newConsulta.contenido" required>
+      </div>
+  
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" [(ngModel)]="newConsulta.email" required>
+      </div>
+  
+      <button type="submit" class="create-button">Enviar Consulta </button>
+    </form>
+</div>

@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavBarComponent } from 'src/app/shared/nav-bar/nav-bar.component';
 import { APIService } from 'src/app/core/services/api.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Libro, Usuario, Noticia } from 'src/app/core/Models';
+import { Libro, Usuario, Noticia, Consulta } from 'src/app/core/Models';
 import { lastValueFrom } from 'rxjs';
 import { EditBookComponent } from '../admin/edit-book/edit-book.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
@@ -19,12 +19,14 @@ export class AdminComponent {
   public libro: Array<Libro> = [];
   public usuario: Array<Usuario> = [];
   public noticia: Array<Noticia> = [];
+  public consulta: Array<Consulta> = [];
 
   ngOnInit(): void {
 
     this.getLibros();
     this.getUsuarios();
     this.getNoticias();
+    this.getConsultas();
 
   }
   
@@ -159,5 +161,44 @@ public deleteUsuario(id: number){
       error: ()=> alert("No se ha podido eliminar el noticia")
     })
 }
+
+public async getConsultas() {
+
+    try {
+
+      let responseApi = this.apiService.getConsultas();
+
+      const data = await lastValueFrom(responseApi);
+
+      this.consulta = data.map((consultaData: any) => new Consulta(consultaData));
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+public createConsulta(consulta: Consulta) {
+
+  this.apiService.addConsulta(consulta).subscribe({
+    next: () => {
+      this.getConsultas();
+      alert("Consulta creado con exito");
+
+    },
+    error: () => alert("No se ha podido crear el Consulta")
+  })
+}
+
+public deleteConsulta(id: number){
+
+    this.apiService.deleteConsulta(id).subscribe({
+      next: ()=>{
+        this.getConsultas();
+        alert("Consulta eliminado con exito");
+      },
+      error: ()=> alert("No se ha podido eliminar el Consulta")
+    })
+}
+
 
 }

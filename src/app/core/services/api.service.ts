@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, first, map, of } from 'rxjs';
-import { Libro, Usuario, Noticia } from '../Models';
+import { Libro, Usuario, Noticia, Consulta } from '../Models';
 
 
 @Injectable({
@@ -57,9 +57,12 @@ export class APIService {
   }
 
   getLibroData(id: number): Observable<any> {
-    // Concatena el libroId a la URL si es necesario
     const url = `${this.url}/libros/${id}`;
     return this.http.get(url);
+  }
+  getLibroBuscar(nombre: string): Observable<Libro[]> {
+    const url = `${this.url}/libros?nombre=${nombre}`;
+    return this.http.get<Libro[]>(url);
   }
 
 
@@ -101,6 +104,24 @@ export class APIService {
 
   deleteNoticia(id: number): Observable<boolean> {
     return this.http.delete(`${this.url}/noticias/${id}`)
+    .pipe(
+      map(resp => true), 
+      catchError(error => of(false)) 
+    );
+  }
+
+
+  getConsultas(): Observable<Consulta[]>{
+    return this.http.get<Consulta[]>(`${this.url}/consultas`);
+  }
+
+  addConsulta(createConsulta: Consulta): Observable<boolean> {
+    const urlAdd = `${this.url}/consultas`;
+    return this.http.post<boolean>(urlAdd, createConsulta);
+  }
+
+  deleteConsulta(id: number): Observable<boolean> {
+    return this.http.delete(`${this.url}/consultas/${id}`)
     .pipe(
       map(resp => true), 
       catchError(error => of(false)) 

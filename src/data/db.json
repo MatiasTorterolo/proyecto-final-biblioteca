@@ -358,5 +358,13 @@
       "imagenUrl": "../assets/imagenes/1predeterminado.png",
       "id": 1
     }
+  ],
+  "consultas": [
+    {
+      "id": 1,
+      "titulo": "cuando sale juego de tronos",
+      "contenido": "me interesa saber cuando sale este libro",
+      "email": "mtorterolo.a@gmail.com"
+    }
   ]
 }

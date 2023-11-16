@@ -6,6 +6,7 @@
              <app-view-book [inputLibros]="libro" (libroToEdit)="editLibro($event)" (libroToDelete)="deleteLibro($event)" (libroToReturn)="returnLibro($event)"> </app-view-book>
              <app-add-book (libroToCreate)="createLibro($event)"></app-add-book>
              <app-view-user [inputUsuarios]="usuario" (usuarioToEdit)="editUsuario($event)" (usuarioToDelete)="deleteUsuario($event)"> </app-view-user>
-        </div>    
+             <app-view-consult [inputConsultas]="consulta"  (consultaToDelete)="deleteConsulta($event)"> </app-view-consult>
+            </div>    
     <app-footer></app-footer> 
  </div>

@@ -1,0 +1,22 @@
+<div>
+    <H2>Consultas</H2>
+    <table class="mi-tabla">
+      <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Contenido</th>
+            <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let consulta of inputConsultas">   
+            <td>{{ consulta.id }}</td> 
+            <td>{{ consulta.titulo }}</td>
+            <td>{{ consulta.contenido }}</td>
+            <td>{{ consulta.email }}</td>
+            <td><button class="delete-button" (click) = "deleteConsulta(consulta.id!)">Borrar</button></td>
+        </tr>
+      </tbody>
+    </table>
+   </div> 

@@ -28,3 +28,13 @@ export interface INoticias{
     imagenUrl: string;
 
 }
+
+export interface IConsultas{
+    
+    id?: number | undefined;
+    titulo: string;
+    contenido: string;
+    email: string;
+
+}
+    
