@@ -29,7 +29,7 @@ export class Libro implements ILibros{
     genero: string = '';
     imagenUrl: string = '';
     descripcion: string = '';
-    disponibilidad: number | null = null;
+    disponibilidad: boolean = true;
 
 
     constructor (libro ? : any){

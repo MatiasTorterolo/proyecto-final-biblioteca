@@ -8,7 +8,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId3.jpg",
       "descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "4",
@@ -18,7 +18,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId4.jpg",
       "descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "5",
@@ -28,7 +28,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId5.jpg",
       "descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "6",
@@ -38,7 +38,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId6.jpg",
       "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "7",
@@ -48,7 +48,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId7.jpg",
       "descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "8",
@@ -58,7 +58,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId8.jpg",
       "descripcion": "La historia de Frodo Bolsón, un hobbit que debe destruir un anillo mágico para salvar la Tierra Media.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "9",
@@ -68,7 +68,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId9.jpg",
       "descripcion": "La historia de Harry Potter, un niño que descubre que es un mago y comienza su educación en el Colegio Hogwarts de Magia y Hechicería.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "10",
@@ -78,7 +78,7 @@
       "genero": "Misterio",
       "imagenUrl": "../assets/imagenes/imagenId10.jpg",
       "descripcion": "La historia del simbologista Robert Langdon, quien se ve envuelto en una búsqueda de un secreto antiguo.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "11",
@@ -88,7 +88,7 @@
       "genero": "Suspenso",
       "imagenUrl": "../assets/imagenes/imagenId11.jpg",
       "descripcion": "La historia de Rachel Watson, una mujer que se ve involucrada en la desaparición de una mujer a la que observa desde el tren.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": "12",
@@ -98,7 +98,7 @@
       "genero": "Suspenso",
       "imagenUrl": "../assets/imagenes/imagenId12.jpg",
       "descripcion": "La historia de Nick Dunne, un hombre cuya esposa Amy desaparece en su quinto aniversario de bodas.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": 13,
@@ -108,7 +108,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId13.jpg",
       "descripcion": "La historia de Santiago, un joven pastor que sueña con encontrar un tesoro y emprende un viaje por el desierto.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": 14,
@@ -118,7 +118,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId14.jpg",
       "descripcion": "La historia de Hazel Grace Lancaster, una adolescente con cáncer, y su relación con Augustus Waters.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": 15,
@@ -128,7 +128,7 @@
       "genero": "Ciencia ficción",
       "imagenUrl": "../assets/imagenes/imagenId15.jpg",
       "descripcion": "La historia de Katniss Everdeen, una joven que se ve obligada a participar en un juego mortal transmitido por televisión.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": 16,
@@ -138,7 +138,7 @@
       "genero": "Ciencia ficción",
       "imagenUrl": "../assets/imagenes/imagenId16.jpg",
       "descripcion": "La historia de Beatrice Prior, una joven que vive en una sociedad dividida en facciones y debe enfrentarse a una elección que cambiará su vida.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": 17,
@@ -148,7 +148,7 @@
       "genero": "Ciencia ficción",
       "imagenUrl": "../assets/imagenes/imagenId17.jpg",
       "descripcion": "La historia de Thomas, un adolescente que se despierta en un lugar llamado el Área, rodeado de un laberinto.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": 18,
@@ -158,7 +158,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId18.jpg",
       "descripcion": "La historia de Liesel Meminger, una niña que roba libros durante la Segunda Guerra Mundial.",
-      "disponibilidad": 1
+      "disponibilidad": true
     },
     {
       "id": 19,
@@ -168,7 +168,17 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId19.jpg",
       "descripcion": "La historia de Amir, un niño afgano que vive en Kabul y su amistad con Hassan, un niño hazara.",
-      "disponibilidad": 1
+      "disponibilidad": true
+    },
+    {
+      "id": 20,
+      "nombre": "El ultimo reino",
+      "autor": "Bernard Cornwell",
+      "year": "2006",
+      "genero": "Historia",
+      "imagenUrl": null,
+      "descripcion": "Los sajones, habiendo fundado los reinos del sur, temen a los vikingos",
+      "disponibilidad": null
     }
   ],
   "usuarios": [

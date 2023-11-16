@@ -7,7 +7,7 @@ export interface ILibros{
     genero: string;
     imagenUrl: string;
     descripcion: string;
-    disponibilidad: number | null;
+    disponibilidad: boolean;
 }
 
 export interface IUsuarios{

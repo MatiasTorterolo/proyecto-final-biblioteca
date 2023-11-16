@@ -13,7 +13,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { AdminComponent } from './components/admin/admin.component';
 import { EditBookComponent } from './components/admin/edit-book/edit-book.component';
 import { AddBookComponent } from './components/admin/add-book/add-book.component';
-import { ViewBookComponent } from './shared/view-book/view-book.component';
+import { ViewBookComponent } from './components/admin/view-book/view-book.component';
 import { ViewUserComponent } from './components/admin/view-user/view-user.component';
 import { AddUserComponent } from './components/admin/add-user/add-user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -21,6 +21,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { mapToCanActivate } from '@angular/router';
+import { ViewBookUserComponent } from './components/home/home-user/view-book-user/view-book-user.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { mapToCanActivate } from '@angular/router';
     ViewBookComponent,
     ViewUserComponent,
     AddUserComponent,
+    ViewBookUserComponent,
   ],
   imports: [
     BrowserModule,

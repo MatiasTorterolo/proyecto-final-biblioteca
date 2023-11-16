@@ -3,13 +3,19 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 150vh; /* Ajusta según el diseño deseado */
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
 
 }
 
-app-view-boook{
-    float: left;
+.listar-libros{
+    background-color: aqua;
+    flex: 1;
 }
 
+.add-libros{
+    background-color: blue;
+    flex:1;
+}
