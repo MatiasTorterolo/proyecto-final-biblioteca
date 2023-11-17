@@ -12,13 +12,13 @@ import { AuthService } from 'src/app/core/services/auth.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent{
+export class RegisterComponent {
 
   public usuario: Usuario = new Usuario();
 
   public newUserId: number = 0;
 
-  constructor(private apiService: APIService, private router: Router, private formBuilder: FormBuilder, private authService: AuthService) {}
+  constructor(private apiService: APIService, private router: Router, private formBuilder: FormBuilder, private authService: AuthService) { }
 
   ngOnInit(): number {
     this.apiService.getNextId().subscribe(count => {
@@ -27,10 +27,10 @@ export class RegisterComponent{
     return this.newUserId
   }
 
-  
-  
 
-  public validatePassword: ValidatorFn = (formGroup: AbstractControl):  ValidationErrors | null => { 
+
+
+  public validatePassword: ValidatorFn = (formGroup: AbstractControl): ValidationErrors | null => {
     let password = formGroup.get('password')?.value;
     let confirmPassword = formGroup.get('confirmPassword')?.value;
 
@@ -43,14 +43,14 @@ export class RegisterComponent{
     email: new FormControl('', [Validators.required]),
     password: new FormControl('', [Validators.required, Validators.minLength(10)]),
     confirmPassword: new FormControl('', [Validators.required, Validators.minLength(10)])
-  }, {validators: this.validatePassword});
+  }, { validators: this.validatePassword });
 
-  
+
   public isInvalidField(field: string): boolean | null {
     return this.loginForm.controls[field].errors && this.loginForm.controls[field].touched;
   }
 
-  public isInvalidPasswordField(field:string): boolean | null {
+  public isInvalidPasswordField(field: string): boolean | null {
     return this.loginForm.errors?.["notSame"] === true || this.isInvalidField(field)
   }
 
@@ -58,11 +58,11 @@ export class RegisterComponent{
     const fieldError = this.getFieldError(passwordField);
 
 
-    if(fieldError) {
+    if (fieldError) {
       return fieldError
     }
 
-    if(this.loginForm.errors?.["notSame"]) {
+    if (this.loginForm.errors?.["notSame"]) {
       console.log(this.newUserId);
       return 'Las contraseñas deben coincidir';
     }
@@ -71,7 +71,7 @@ export class RegisterComponent{
   }
 
   public getFieldError(field: string): string | null {
-    if(!this.loginForm.controls[field]) return null;
+    if (!this.loginForm.controls[field]) return null;
 
     const errors = this.loginForm.controls[field].errors || {};
     for (const errorKey of Object.keys(errors)) {
@@ -88,30 +88,30 @@ export class RegisterComponent{
     return null;
   }
 
-  
+
 
   public async onSubmit() {
 
-    if(this.loginForm.valid) {
+    if (this.loginForm.valid) {
 
-      this.usuario = { id: this.newUserId, nombre: this.loginForm.get('nombre')?.value, apellido: this.loginForm.get('apellido')?.value, email: this.loginForm.get('email')?.value, password: this.loginForm.get('confirmPassword')?.value, tipoDeCuenta: "Usuario"};
+      this.usuario = { id: this.newUserId, nombre: this.loginForm.get('nombre')?.value, apellido: this.loginForm.get('apellido')?.value, email: this.loginForm.get('email')?.value, password: this.loginForm.get('confirmPassword')?.value, tipoDeCuenta: "Usuario" };
 
-      try{
+      try {
 
         let isRegister: boolean = await this.authService.register(this.usuario);
-    
-        if(isRegister){
+
+        if (isRegister) {
           this.router.navigate(['/landing']); //este navigate hay que cambiarlo tmb
         }
-        
-    
-       } catch (error){
+
+
+      } catch (error) {
         console.log(error);
       }
     }
   }
 
-  public navigateToLogin(){
+  public navigateToLogin() {
     this.router.navigate(['/landing']); //esto hay que cambiarlo
   }
 }
