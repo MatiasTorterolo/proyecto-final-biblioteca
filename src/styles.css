@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color1: #132a13;  /* Verde oscuro */
+    --color2: #31572c;  /* Verde  */
+    --color3: #4f772d;  /* Verde claro */
+    --color4: #90a955;  /* Verde palido */
+    --color5: #ecf39e;  /* Marrón claro */
+  }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--color5);
+}
+
+.text-center {
+text-align: center;
+}
+
+@media (min-width: 768px) {
+.max-width-30 {
+    max-width: 30rem;
+}
+}

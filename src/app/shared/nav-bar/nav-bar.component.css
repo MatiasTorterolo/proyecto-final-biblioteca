@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
   }
   
   .brand {
@@ -14,10 +16,69 @@
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
   }
   
   .nav-links li a {
     text-decoration: none;
     color: #4d3319; /* Marrón oscuro */
   }
+
+  #contenedor-nav {
+    background-color: #6B9080;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000;
+    
+}
+.nav-principal {
+    background-image: linear-gradient(to top, var(--color4), var(--color2));
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 1.4rem;
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
+    position: relative;
+}
+
+#contenedor-nav a {
+    text-decoration: none;
+    color: #000000;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#contenedor-nav a:hover {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    flex-grow: 0.01;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: #020202 2px 2px 2px;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-radius: 10%;
+}
+
+@media (max-width: 500px) { 
+    .nav-principal {
+        flex-direction: column;
+        align-items: center;
+        height: 18rem;
+        padding: 3rem;
+    }
+    #contenedor-nav a{
+        font-size: 2rem;
+        padding: 0.2rem;
+        border: none;
+    }
+    #contenedor-nav a:hover {
+        border: none; 
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+    }
+}

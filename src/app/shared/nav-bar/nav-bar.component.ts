@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+  nombre:string[];
 
+  constructor() {
+    this.nombre=["Juan"];
+  }
 }
