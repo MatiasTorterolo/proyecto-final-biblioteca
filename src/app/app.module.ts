@@ -22,12 +22,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { EditUserComponent } from './components/admin/edit-user/edit-user.component';
 import { ViewBookUserComponent } from './components/home/view-book-user/view-book-user.component';
 import { AddNoticeComponent } from './components/admin/add-news/add-news.component';
+import { SearchBookComponent } from './components/home/search-book/search-book.component';
 import { BuscarLibroComponent } from './shared/buscar-libro/buscar-libro.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ConsultaComponent } from './components/contacto/consulta/consulta.component';
 import { ViewConsultComponent } from './components/admin/view-consult/view-consult.component';
-
-
 
 @NgModule({
   declarations: [
@@ -49,6 +48,7 @@ import { ViewConsultComponent } from './components/admin/view-consult/view-consu
     EditUserComponent,
     ViewBookUserComponent,
     AddNoticeComponent,
+    SearchBookComponent,
     BuscarLibroComponent,
     ContactoComponent,
     ConsultaComponent,
