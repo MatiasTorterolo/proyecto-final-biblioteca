@@ -22,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { EditUserComponent } from './components/admin/edit-user/edit-user.component';
 import { ViewBookUserComponent } from './components/home/view-book-user/view-book-user.component';
 import { AddNoticeComponent } from './components/admin/add-news/add-news.component';
+import { SearchBookComponent } from './components/home/search-book/search-book.component';
 
 
 
@@ -44,7 +45,8 @@ import { AddNoticeComponent } from './components/admin/add-news/add-news.compone
     ViewUserComponent,
     EditUserComponent,
     ViewBookUserComponent,
-    AddNoticeComponent
+    AddNoticeComponent,
+    SearchBookComponent
   ],
   imports: [
     BrowserModule,

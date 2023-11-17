@@ -1,0 +1,49 @@
+.search-book-container__search {
+    margin-bottom: 2em;
+
+
+}
+
+.search-book-container__input {
+    width: 20%;
+    border: 0.1px solid #cc8b00;
+    padding: 5px;
+    height: 20px;
+    border-radius: 0.25em;
+    /* put padding on the sides */
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    color: #e8ab26;
+}
+
+.search-book-container__input::placeholder {
+    color: #d6b97b;
+}
+
+.search-book-container__results {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    min-height: 500px;
+    padding-bottom: 10px;
+}
+
+.search-book-container__results__book {
+    margin-right: 1em;
+    padding: 15px 20px;
+    border: 0.1px solid #cc8b00;
+    border-radius: 0.5em;
+    min-height: 500px;
+}
+
+.search-book-container__results__book__info-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 190px;
+    max-height: 190px;
+}
+
+.search-borrow-button {
+    margin-top: 50px;
+}
