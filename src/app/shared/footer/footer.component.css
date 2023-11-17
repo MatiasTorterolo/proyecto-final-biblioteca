@@ -1,9 +1,170 @@
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(119, 113, 113, 0.8); /* Cambia el color de fondo según tus necesidades */
-    color: #fff; /* Cambia el color del texto según tus necesidades */
-    padding: 10px;
-    text-align: center;
+#contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+#horarios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 5rem;
+} 
+
+#horarios h2{
+  background-image: linear-gradient(to right, yellow, darkorange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+#horarios a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #d2691e;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem; 
+}
+
+#horarios a:hover {
+  display: block;
+  text-align: center;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  flex-grow: 0.01;
+  font-weight: bold;
+  color: #f30000;
+  text-shadow: #020202 2px 2px 2px;
+  font-size: 3rem;
+}
+
+#horarios h3 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center; 
+}
+
+.contenedor-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para los elementos dentro de .contenedor-info */
+.contenedor-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 5px;
+}
+
+
+.logoutm {
+  height: 5rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la direccion */
+#direccion a {
+  text-decoration: none;
+  color: #d2691e;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+#direccion a:hover {
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  flex-grow: 0.01;
+  font-weight: bold;
+  background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+
+/* Estilos para los números de teléfono */
+.contenedor-info p {
+  margin: 0;
+  color: #fff;
+}
+#email a{
+  text-decoration: none;
+  color: #d2691e;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem; 
+}
+#email a:hover {
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  flex-grow: 0.01;
+  font-weight: bold;
+  background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-radius: 10%;
+  font-size: 2rem;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social {
+  display: flex;
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  margin-right: 10px;
+  background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 0 10px; 
+}
+
+@media (max-width: 500px) { 
+  .contenedor-info {
+      flex-direction: column;
+      align-items: center;
+      padding: 0rem;
   }
+  #contenedor-footer {
+      padding-top: 3rem;
+  }
+  
+  .contenedor-info div {
+      padding: 0rem; 
+  }
+
+  .social {
+      margin-top: 20px; 
+  }
+  #contenedor-footer a:hover {
+      color: #f30000;
+      text-shadow: #020202 2px 2px 2px;
+      font-size: 2rem;
+      border: none;
+  }
+}

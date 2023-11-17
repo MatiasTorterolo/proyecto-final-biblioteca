@@ -1,28 +1,5 @@
-.navbar {
-    background-color: #D2B48C; /* Color marrón claro */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid #666666;
-    border-bottom: 2px solid #666666;
-  }
+
   
-  .brand {
-    font-size: 1.5rem;
-    color: #4d3319; /* Marrón oscuro */
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #4d3319; /* Marrón oscuro */
-  }
 
   #contenedor-nav {
     background-color: #6B9080;
@@ -39,17 +16,28 @@
     align-items: center;
     justify-content: flex-end;
     height: 1.4rem;
-    border-top: 2px solid #666666;
-    border-bottom: 2px solid #666666;
+    border-top: 2px solid #302f2f;
+    border-bottom: 2px solid #302f2f;
+    border-top: 2px solid var(--color1);
+      border-bottom: 2px solid var(--color1);
     position: relative;
 }
 
 #contenedor-nav a {
+    display: flex;
+    gap: 30px;
     text-decoration: none;
     color: #000000;
     justify-content: space-between;
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+#nav-usuarioNombre  {
+  text-decoration: none;
+  color: #000000;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  padding: 3rem;
 }
 
 #contenedor-nav a:hover {
@@ -59,26 +47,24 @@
     font-weight: bold;
     color: #ffffff;
     text-shadow: #020202 2px 2px 2px;
-    border-left: 2px solid #000000;
-    border-right: 2px solid #000000;
     border-radius: 10%;
 }
 
 @media (max-width: 500px) { 
     .nav-principal {
+        display: flex;
         flex-direction: column;
         align-items: center;
         height: 18rem;
-        padding: 3rem;
+        padding: 0rem;
     }
     #contenedor-nav a{
         font-size: 2rem;
-        padding: 0.2rem;
+        padding: 0.02rem;
         border: none;
     }
-    #contenedor-nav a:hover {
-        border: none; 
-        border-top: 2px solid #000000;
-        border-bottom: 2px solid #000000;
+
+    #nav-usuarioNombre {
+        display: none; 
     }
 }
