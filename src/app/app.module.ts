@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { NoticiasAsideComponent } from './shared/noticias-aside/noticias-aside.component';
-import { PopularSectionComponent } from './shared/popular-section/popular-section.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingComponent } from './components/landing/landing.component';
@@ -35,7 +34,6 @@ import { ViewConsultComponent } from './components/admin/view-consult/view-consu
     FooterComponent,
     HeaderComponent,
     NoticiasAsideComponent, // <-- Add the @Component decorator here
-    PopularSectionComponent,
     NavBarComponent,
     HomeComponent,
     LandingComponent,

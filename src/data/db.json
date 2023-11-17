@@ -38,7 +38,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId6.jpg",
       "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug.",
-      "disponibilidad": 0
+      "disponibilidad": 1
     },
     {
       "id": "7",
@@ -199,12 +199,12 @@
       "tipoDeCuenta": "Usuario"
     },
     {
-      "id": 3,
       "nombre": "Robert",
       "apellido": "Johnson",
       "email": "robertjohnson@example.com",
       "password": "abc123",
-      "tipoDeCuenta": "Admin"
+      "tipoDeCuenta": "Usuario",
+      "id": 3
     },
     {
       "id": 4,
@@ -295,12 +295,12 @@
       "tipoDeCuenta": "Usuario"
     },
     {
-      "id": 15,
       "nombre": "Andrew",
       "apellido": "Lee",
       "email": "andrewlee@example.com",
       "password": "987654",
-      "tipoDeCuenta": "Admin"
+      "tipoDeCuenta": "Admin",
+      "id": 15
     },
     {
       "id": 16,
@@ -319,12 +319,12 @@
       "tipoDeCuenta": "Usuario"
     },
     {
-      "id": 18,
       "nombre": "Mia",
       "apellido": "Lopez",
       "email": "mialopez@example.com",
       "password": "ilovemusic",
-      "tipoDeCuenta": "Admin"
+      "tipoDeCuenta": "Usuario",
+      "id": 18
     },
     {
       "id": 19,
@@ -343,12 +343,12 @@
       "tipoDeCuenta": "Admin"
     },
     {
-      "id": 21,
-      "nombre": "Matias",
-      "apellido": "Torterolo Ambrosini",
-      "email": "mtorterolo.a@gmail.com",
-      "password": "Matias12345",
-      "tipoDeCuenta": "Usuario"
+      "nombre": "guillermo",
+      "apellido": "Lorenzo",
+      "email": "guille@g.com",
+      "password": "12345guille",
+      "tipoDeCuenta": "Usuario",
+      "id": 22
     }
   ],
   "noticias": [
