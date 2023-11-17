@@ -1,0 +1,25 @@
+<div class="search-book-container">
+
+    <div class="search-book-container__search">
+        <input class="search-book-container__input" type="text" placeholder="Buscar libro..." [(ngModel)]="searchBook"
+            (keyup)="searchBookFn()">
+    </div>
+
+    <div class="search-book-container__results">
+        <div *ngFor="let libro of libros">
+            <div class="search-book-container__results__book">
+                <div class="search-book-container__results__book__image">
+                    <img src="{{libro.imagenUrl}}" height="275" width="180">
+                </div>
+                <div class="search-book-container__results__book__info-container">
+                    <div class="search-book-container__results__book__info">
+                        <h3>{{libro.nombre}}</h3>
+                        <p>{{libro.autor}}</p>
+                        <p>{{libro.year}}</p>
+                    </div>
+                    <button class="search-borrow-button" (click)="borrowLibro(libro.id!)">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
