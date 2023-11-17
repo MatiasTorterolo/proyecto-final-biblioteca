@@ -1,4 +1,4 @@
-import {IUsuarios, ILibros, INoticias} from "./Interface";
+import {IUsuarios, ILibros, INoticias, IConsultas} from "./Interface";
 
 export class Usuario implements IUsuarios{
         id?: number | undefined;
@@ -47,13 +47,31 @@ export class Libro implements ILibros{
 
 export class Noticia implements INoticias {
     
+    id?: number | undefined;
     titulo: string = '';
     contenido: string = '';
     imagenUrl: string = '';
 
     constructor (noticia ? : any){
+        this.id = noticia == undefined ? null : noticia.id;
         this.titulo = noticia == undefined ? null : noticia.titulo;
         this.contenido = noticia == undefined ? null : noticia.contenido;
         this.imagenUrl = noticia == undefined ? null : noticia.imagenUrl;
     }
 }
+
+export class Consulta implements IConsultas {
+    
+    id?: number | undefined;
+    titulo: string = '';
+    contenido: string = '';
+    email: string = '';
+
+    constructor (consulta ? : any){
+        this.id = consulta == undefined ? null : consulta.id;
+        this.titulo = consulta == undefined ? null : consulta.titulo;
+        this.contenido = consulta == undefined ? null : consulta.contenido;
+        this.email = consulta == undefined ? null : consulta.email;
+    }
+}
+

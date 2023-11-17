@@ -22,8 +22,19 @@ export interface IUsuarios{
 
 export interface INoticias{
     
+    id?: number | undefined;
     titulo: string;
     contenido: string;
     imagenUrl: string;
 
 }
+
+export interface IConsultas{
+    
+    id?: number | undefined;
+    titulo: string;
+    contenido: string;
+    email: string;
+
+}
+    

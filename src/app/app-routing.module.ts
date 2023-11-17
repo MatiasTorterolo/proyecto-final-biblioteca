@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { authGuard } from './guards/auth.guard';
 import { loginGuard } from './guards/login.guard';
 import { AdminComponent } from './components/admin/admin.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     canActivate: [authGuard]
+  },
+  {
+    path: 'contacto',
+    component: ContactoComponent,
   },
   {
     path: '',
