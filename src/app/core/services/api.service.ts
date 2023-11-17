@@ -26,6 +26,10 @@ export class APIService {
     return this.http.get<Usuario[]>(`${this.url}/usuarios`);
   }
 
+  getUsuarioPorId(id: number){
+    const url = `${this.url}/usuarios/${id}`; // Reemplaza con la ruta real de tu API
+    return this.http.get(url);
+  }
   getUsuarioPor(id: number): Observable<Usuario> {
     return this.http.get<Usuario>(`${this.url}/usuarios/${id}`).pipe(first())
   }

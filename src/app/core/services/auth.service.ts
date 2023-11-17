@@ -82,7 +82,8 @@ export class AuthService {
     return localStorage.getItem('token') ? true : false;
   }
 
-  
-
+  public getUsuario():any{
+    return this.usuario;
+  } 
 
 }

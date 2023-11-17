@@ -8,6 +8,7 @@ export class Usuario implements IUsuarios{
         password: string = '';
         tipoDeCuenta: string = '';
 
+
     constructor (usuario ? : any){
 
         this.id = usuario == undefined ? null : usuario.id;
