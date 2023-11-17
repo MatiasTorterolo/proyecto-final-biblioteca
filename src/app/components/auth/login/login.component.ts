@@ -12,6 +12,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 
 export class LoginComponent {
 
+
   public usuario: Usuario | null = null;
 
   private email: string = '';
@@ -92,4 +93,9 @@ export class LoginComponent {
       console.log(error);
     }
   }
+
+  public navigateToRegister(){
+    this.router.navigate(['/register']);
+  }
+  
 }
