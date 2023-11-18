@@ -1,13 +1,24 @@
-<div>
-  <H2>Noticias</H2>
-      <div *ngFor="let noticia of inputNoticias">   
-          <h3>{{ noticia.titulo }}</h3> 
-          <img src="{{noticia.imagenUrl}}">
-          <p>{{ noticia.contenido }}</p>
-          <div *ngIf="isAdminPage()">
-          <button class="delete-button" (click) = "deleteNoticia(noticia.id!)">Borrar</button>
-        </div>
-      </div>
-
- </div> 
-
+<body>
+  <header id="contenedor-header"></header>
+  <div id="contenedor-nav"></div> 
+ 
+  <main class="contenido-principal">
+            
+     <div class="contenido-nosotros"*ngFor="let noticia of inputNoticias">
+            
+              <div>
+                <img src="{{noticia.imagenUrl}}"  width="20%" height="20%">
+                
+                <div class="cuadro-noticia">
+                 <h2 class="notih2">Noticia destacada: </h2> 
+                 <h3>{{ noticia.titulo }}</h3> 
+                 <p>{{ noticia.contenido }}</p>
+                </div>
+              </div>
+            <div *ngIf="isAdminPage()">
+              <button class="delete-button" (click) = "deleteNoticia(noticia.id!)">Borrar</button>
+            </div>
+        
+      </div> 
+  </main>
+</body>

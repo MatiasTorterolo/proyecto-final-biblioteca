@@ -1,13 +1,17 @@
-<div>
-  <app-header></app-header>
-  <app-nav-bar></app-nav-bar>
-  <div class="content">
-    <app-noticias-aside [inputNoticias]="noticia" (noticiaToDelete)="deleteNoticia($event)"></app-noticias-aside>
-    <app-search-book />
-    <div class="principal">
-      <app-buscar-libro></app-buscar-libro>
-      <app-view-book-user [inputLibros]="libro" (libroToBorrow)="borrowLibro($event)"></app-view-book-user>
+<div class="container">
+    <app-header></app-header>
+    <app-nav-bar></app-nav-bar>
+    
+    <div class="content">
+      <div class="noticias-container">
+        <app-noticias-aside class="noticias" [inputNoticias]="noticia" (noticiaToDelete)="deleteNoticia($event)"></app-noticias-aside>
+      </div>
+  
+      <div class="principal">
+        <app-buscar-libro></app-buscar-libro>
+        <app-view-book-user [inputLibros]="libro" (libroToBorrow)="borrowLibro($event)"></app-view-book-user>
+      </div>
     </div>
+    
+    <app-footer></app-footer>
   </div>
-  <app-footer></app-footer>
-</div>

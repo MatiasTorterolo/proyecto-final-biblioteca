@@ -4,6 +4,6 @@
       <a routerLink="/home">Inicio</a>
       <a routerLink="/landing-page">Cerrar sesion</a>
       <a routerLink="/contacto">Contacto</a>
-      <a routerLink="/admin" id="tipo">Admin</a>
+      <a *ngIf="esAdmin()"routerLink="/admin" id="tipo">Admin</a>
   </nav>
 </div>

@@ -20,6 +20,7 @@ export class NavBarComponent implements OnInit {
     if (usuario && usuario.nombre && usuario.apellido) {
       this.nombreCompleto = `${usuario.nombre} ${usuario.apellido}`;
     }
+    
 
     // Lógica para fijar la barra de navegación
     this.nav = document.getElementById('contenedor-nav');
@@ -46,4 +47,10 @@ export class NavBarComponent implements OnInit {
       fijarBarraNavegacion();
     }
   }
+
+  esAdmin(): boolean {
+    const usuario = this.authservice.getUsuario();
+    return usuario && usuario.tipo === 'admin'; // Ajusta según la estructura real de tu objeto de usuario
+  }
+
 }
