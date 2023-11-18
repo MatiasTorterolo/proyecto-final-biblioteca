@@ -195,14 +195,14 @@
       "nombre": "Jane",
       "apellido": "Smith",
       "email": "janesmith@example.com",
-      "password": "qwerty",
+      "password": "password123",
       "tipoDeCuenta": "Usuario"
     },
     {
       "nombre": "Robert",
       "apellido": "Johnson",
       "email": "robertjohnson@example.com",
-      "password": "abc123",
+      "password": "abc123456789010",
       "tipoDeCuenta": "Usuario",
       "id": 3
     },
@@ -211,7 +211,7 @@
       "nombre": "Emily",
       "apellido": "Davis",
       "email": "emilydavis@example.com",
-      "password": "password456",
+      "password": "password456233443",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -219,7 +219,7 @@
       "nombre": "Michael",
       "apellido": "Wilson",
       "email": "michaelwilson@example.com",
-      "password": "123456",
+      "password": "password123456765543",
       "tipoDeCuenta": "Admin"
     },
     {
@@ -227,7 +227,7 @@
       "nombre": "Jessica",
       "apellido": "Taylor",
       "email": "jessicataylor@example.com",
-      "password": "iloveyou",
+      "password": "iloveyouorimloveyourfather",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -235,14 +235,14 @@
       "nombre": "David",
       "apellido": "Anderson",
       "email": "davidanderson@example.com",
-      "password": "qwerty123",
+      "password": "qwerty123456578",
       "tipoDeCuenta": "Usuario"
     },
     {
       "nombre": "Sarah",
       "apellido": "Thomas",
       "email": "sarahthomas@example.com",
-      "password": "password789",
+      "password": "password7891234",
       "tipoDeCuenta": "Usuario",
       "id": 8
     },
@@ -251,7 +251,7 @@
       "nombre": "Christopher",
       "apellido": "Jackson",
       "email": "christopherjackson@example.com",
-      "password": "abcxyz",
+      "password": "abcxyzdefghijk",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -259,7 +259,7 @@
       "nombre": "Olivia",
       "apellido": "White",
       "email": "oliviawhite@example.com",
-      "password": "letmein",
+      "password": "letmeinddeeeeeee",
       "tipoDeCuenta": "Admin"
     },
     {
@@ -267,7 +267,7 @@
       "nombre": "Daniel",
       "apellido": "Harris",
       "email": "danielharris@example.com",
-      "password": "password1",
+      "password": "password12222222",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -275,7 +275,7 @@
       "nombre": "Sophia",
       "apellido": "Martin",
       "email": "sophiamartin@example.com",
-      "password": "123abc",
+      "password": "123abc22222222222222",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -283,7 +283,7 @@
       "nombre": "Matthew",
       "apellido": "Thompson",
       "email": "matthewthompson@example.com",
-      "password": "qazwsx",
+      "password": "qazwsxaqewddsss",
       "tipoDeCuenta": "Admin"
     },
     {
@@ -291,7 +291,7 @@
       "nombre": "Ava",
       "apellido": "Garcia",
       "email": "avagarcia@example.com",
-      "password": "pass123",
+      "password": "pass123pasapanpon",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -307,7 +307,7 @@
       "nombre": "Isabella",
       "apellido": "Clark",
       "email": "isabellaclark@example.com",
-      "password": "hello123",
+      "password": "hello12355454333",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -315,14 +315,14 @@
       "nombre": "Ethan",
       "apellido": "Rodriguez",
       "email": "ethanrodriguez@example.com",
-      "password": "qwertyuiop",
+      "password": "qwertyuio222222p",
       "tipoDeCuenta": "Usuario"
     },
     {
       "nombre": "Mia",
       "apellido": "Lopez",
       "email": "mialopez@example.com",
-      "password": "ilovemusic",
+      "password": "ilovemusicilikeit",
       "tipoDeCuenta": "Usuario",
       "id": 18
     },
@@ -331,7 +331,7 @@
       "nombre": "James",
       "apellido": "Hall",
       "email": "jameshall@example.com",
-      "password": "password2",
+      "password": "password2assdwwww",
       "tipoDeCuenta": "Usuario"
     },
     {
@@ -339,15 +339,15 @@
       "nombre": "Charlottttttttttte",
       "apellido": "Young",
       "email": "charlotteyoung@example.com",
-      "password": "zxcvbnm",
+      "password": "zxcvbnmadw232211",
       "tipoDeCuenta": "Admin"
     },
     {
       "nombre": "Guillermo",
       "apellido": "Lorenzo",
-      "email": "guille@g.com",
+      "email": "guille@gmail.com",
       "password": "12345guille",
-      "tipoDeCuenta": "Usuario",
+      "tipoDeCuenta": "Admin",
       "id": 22
     }
   ],

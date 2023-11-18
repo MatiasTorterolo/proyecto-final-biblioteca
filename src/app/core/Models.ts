@@ -17,7 +17,7 @@ export class Usuario implements IUsuarios{
         this.apellido = usuario == undefined ? null : usuario.apellido;
         this.email = usuario == undefined ? null : usuario.email;
         this.password = usuario == undefined ? null : usuario.password;
-        this.tipoDeCuenta = usuario == undefined ? null : usuario["tipo de cuenta"];
+        this.tipoDeCuenta = usuario == undefined ? null : usuario.tipoDeCuenta;
     } 
 }
 

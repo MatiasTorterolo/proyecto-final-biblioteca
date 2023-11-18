@@ -1,5 +1,5 @@
 .login-container {
-    width: 300px;
+    width: 320px;
     margin: 0 auto;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
@@ -10,7 +10,7 @@
   }
   
   .login-container h2 {
-    color: #333;
+    color: rgba(154,81,33,255);
     margin-bottom: 20px;
   }
 
@@ -40,7 +40,7 @@
   }
   
   button {
-    background-color: #3498db;
+    background-color: rgba(154,81,33,255);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -50,7 +50,7 @@
   }
   
   button:hover {
-    background-color: brown;
+    background-color: rgba(154,81,33,255);
   }
   
  
@@ -60,8 +60,9 @@
   
   .login-container a {
     text-decoration: none;
-    color: #3498db;
+    color: rgba(154,81,33,255);
     font-weight: bold;
+    cursor: pointer;
   }
   
   .login-container a:hover {
@@ -78,7 +79,11 @@
   }
 
   .login-button:disabled {
-    background-color: rgb(71, 44, 8);
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: not-allowed;
   }
 

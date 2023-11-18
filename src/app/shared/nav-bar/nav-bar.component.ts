@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class NavBarComponent implements OnInit {
 
   private nav: HTMLElement | null = null;
 
-  constructor(private authservice: AuthService) {}
+  constructor(private authservice: AuthService, private router: Router) {}
 
   ngOnInit(): void {
     // Lógica para obtener el nombre del usuario
@@ -45,5 +46,10 @@ export class NavBarComponent implements OnInit {
       // También puedes llamar a la función una vez en la inicialización
       fijarBarraNavegacion();
     }
+  }
+
+  cerrarSesion(): void {
+    localStorage.clear();
+    this.router.navigate(['/login']);
   }
 }

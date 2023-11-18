@@ -1,76 +1,80 @@
 .register-container {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .register-container h2 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    margin-right: 20px;
-    text-align: left;
-  }
-  
-  label {
-    display: block;
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-  }
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-  button:hover {
-    background-color: #258ac5;
-  }
+.register-container h2 {
+  color: rgba(154,81,33,255);
+  margin-bottom: 20px;
+}
 
-  button:disabled {
-    background-color: #3498db8d;
-    cursor: not-allowed;
+.form-group {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
 
-  }
-  
-  .register-container p {
-    font-size: 0.9em;
-  }
-  
-  .register-container a {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-  }
-  
-  .register-container a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+label {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
 
-  .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-  }
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color:rgba(154,81,33,255);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:disabled {
+  background-color: burlywood;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.register-container p {
+  font-size: 0.9em;
+}
+
+.register-container a {
+  text-decoration: none;
+  color:rgba(154,81,33,255);
+  font-weight: bold;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

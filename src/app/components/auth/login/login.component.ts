@@ -81,7 +81,7 @@ export class LoginComponent {
       let isLogin: boolean = await this.authService.login(this.loginForm.value.email, this.loginForm.value.password);
 
       if(isLogin) {
-        this.router.navigate(['/landing']); //aca hay que ver bien despues a donde redireccionamos cuando ingresa el usuario
+        this.router.navigate(['/home']); //aca hay que ver bien despues a donde redireccionamos cuando ingresa el usuario
 
       } else {
         this.email = this.loginForm.value.email;
