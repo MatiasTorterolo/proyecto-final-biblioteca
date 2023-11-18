@@ -76,8 +76,54 @@
     cursor: pointer;
   }
 
-  .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-  }
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color:rgba(154,81,33,255);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:disabled {
+  background-color: burlywood;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.register-container p {
+  font-size: 0.9em;
+}
+
+.register-container a {
+  text-decoration: none;
+  color:rgba(154,81,33,255);
+  font-weight: bold;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

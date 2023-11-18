@@ -68,3 +68,8 @@
         display: none; 
     }
 }
+
+.close-sesion{
+    cursor: pointer;
+}
+
