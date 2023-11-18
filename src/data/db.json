@@ -191,7 +191,6 @@
       "tipoDeCuenta": "Usuario"
     },
     {
-      "id": 2,
       "nombre": "Jane",
       "apellido": "Smith",
       "email": "janesmith@example.com",

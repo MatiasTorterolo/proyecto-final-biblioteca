@@ -8,8 +8,7 @@
             <th>Apellido</th>
             <th>Email</th>
             <th>Password</th>
-            <th>Tipo de cuenta</th>
-            <th>Borrar</th>
+            <th>Eliminar</th>
             <th>Editar</th>
         </tr>
       </thead>
@@ -20,7 +19,6 @@
             <td>{{ usuario.apellido }}</td>
             <td>{{ usuario.email }}</td>
             <td>{{ usuario.password }}</td>
-            <td>{{ usuario.tipoDeCuenta }}</td>
             <td><button class="delete-button" (click) = "deleteUsuario(usuario.id!)">Borrar</button></td>
             <td><button class="edit-button" (click)="editUsuario(usuario)">Editar</button></td>
         </tr>

@@ -1,31 +1,80 @@
 .register-container {
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--color4);
+    padding: 20px;
+    border: 1px solid var(--color1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .register-container h2 {
+    color: var(--color1);
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    color: var(--color1);
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color2);
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: var(--color2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
 
-.register-container h2 {
-  color: rgba(154,81,33,255);
-  margin-bottom: 20px;
-}
+  button:hover {
+    background-color: var(--color1);
+  }
 
-.form-group {
-  margin-bottom: 20px;
-  margin-right: 20px;
-  text-align: left;
-}
+  button:disabled {
+    background-color: var(--color5);
+    color: var(--color1);
+    cursor: not-allowed;
 
-label {
-  display: block;
-  color: #666;
-  font-size: 0.9em;
-  margin-bottom: 5px;
-}
+  }
+  
+  .register-container p {
+    font-size: 0.9em;
+  }
+  
+  .register-container a {
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
 input {
   width: 100%;

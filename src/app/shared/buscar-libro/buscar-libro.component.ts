@@ -29,11 +29,11 @@ export class BuscarLibroComponent implements OnInit{
         .pipe(
           debounceTime(300),
           switchMap((nombre: string) => {
-            return this.apiService.getLibroBuscar(nombre); // Ajusté el nombre del método
+            return this.apiService.getLibroBuscar(nombre); 
           })
         )
         .subscribe((libros: Libro[]) => {
-          // Filtra los libros según el género seleccionado
+          
           this.libros = libros;
         });
     } else {
