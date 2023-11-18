@@ -351,14 +351,7 @@
       "id": 22
     }
   ],
-  "noticias": [
-    {
-      "titulo": "gkgk",
-      "contenido": "gjkggkg",
-      "imagenUrl": "../assets/imagenes/1predeterminado.png",
-      "id": 1
-    }
-  ],
+  "noticias": [],
   "consultas": [
     {
       "id": 1,
