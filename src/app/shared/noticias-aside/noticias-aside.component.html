@@ -2,7 +2,7 @@
   <header id="contenedor-header"></header>
   <div id="contenedor-nav"></div> 
  
-  <main class="contenido-principal">
+  <div class="contenido-principal">
             
      <div class="contenido-nosotros"*ngFor="let noticia of inputNoticias">
             
@@ -14,11 +14,12 @@
                  <h3>{{ noticia.titulo }}</h3> 
                  <p>{{ noticia.contenido }}</p>
                 </div>
+                <div *ngIf="isAdminPage()">
+                  <button class="delete-button" (click) = "deleteNoticia(noticia.id!)">Borrar</button>
+                </div>
               </div>
-            <div *ngIf="isAdminPage()">
-              <button class="delete-button" (click) = "deleteNoticia(noticia.id!)">Borrar</button>
-            </div>
+            
         
       </div> 
-  </main>
+  </div>
 </body>

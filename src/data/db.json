@@ -352,16 +352,22 @@
   ],
   "noticias": [
     {
-      "titulo": "Proximo libro ",
-      "contenido": "En un emocionante acontecimiento literario, el aclamado autor J.R.R. Tolkien nos sorprende con el lanzamiento de su nuevo libro, expandiendo el épico universo de 'The Lord Of The Rings' ",
-      "imagenUrl": "../assets/imagenes/1predeterminado.png",
-      "id": 1
-    },
-    {
       "titulo": "Cierre de editorial ",
       "contenido": "Lamentablemente, debido a desafíos económicos, la prestigiosa editorial se ve obligada a cerrar sus puertas. Su contribución invaluable al mundo de la literatura y la cultura deja un vacío significativo en la industria editorial. Agradecemos su legado y esperamos que el cierre sea solo un capítulo temporal en la historia literaria.",
       "imagenUrl": "../assets/imagenes/1predeterminado.png",
       "id": 2
+    },
+    {
+      "titulo": "cancelamos el local",
+      "contenido": "Lamentablemente, debido a desafíos económicos, la prestigiosa editorial se ve obligada a cerrar sus puertas. Su contribución invaluable al mundo de la literatura y la cultura deja un vacío significativo en la industria editorial. Agradecemos su legado y esperamos que el cierre sea solo un capítulo temporal en la historia literaria.",
+      "imagenUrl": "../assets/imagenes/1predeterminado.png",
+      "id": 3
+    },
+    {
+      "titulo": "Felicitaciones",
+      "contenido": "Lamentablemente, debido a desafíos económicos, la prestigiosa editorial se ve obligada a cerrar sus puertas. Su contribución invaluable al mundo de la literatura y la cultura deja un vacío significativo en la industria editorial. Agradecemos su legado y esperamos que el cierre sea solo un capítulo temporal en la historia literaria.",
+      "imagenUrl": "../assets/imagenes/1predeterminado.png",
+      "id": 4
     }
   ],
   "consultas": [

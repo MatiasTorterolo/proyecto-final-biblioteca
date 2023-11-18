@@ -55,7 +55,7 @@ export class NavBarComponent implements OnInit {
   }
   esAdmin(): boolean {
     const usuario = this.authservice.getUsuario();
-    return usuario && usuario.tipo === 'admin'; // Ajusta según la estructura real de tu objeto de usuario
+    return usuario && usuario.tipoDeCuenta === 'Admin'; // Ajusta según la estructura real de tu objeto de usuario
   }
 
 }

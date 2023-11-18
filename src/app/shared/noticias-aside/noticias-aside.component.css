@@ -5,7 +5,16 @@
     justify-content: space-around;
 
 }
+.contenido-principal{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
 .contenido-nosotros p{
+
     color: #ffffff; /* Color de texto normal */
     font-size: 2rem;
     text-align: left;
@@ -16,14 +25,13 @@
     font-size: 3rem;
 }
 .contenido-nosotros {
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-in;
-    
+
     grid-template-columns: 1fr 2fr;
     grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
     column-gap: 4rem;
     max-width: 90rem; 
      padding: 1rem;
+     text-align: center;
    
 }
 .noti2 h2{
