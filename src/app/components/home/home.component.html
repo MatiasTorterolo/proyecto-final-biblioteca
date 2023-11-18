@@ -2,10 +2,10 @@
   <app-header></app-header>
   <app-nav-bar></app-nav-bar>
   <div class="content">
-    <app-noticias-aside [inputNoticias]="noticia" (noticiaToDelete)="deleteNoticia($event)"></app-noticias-aside>
-    <app-search-book />
+    
     <div class="principal">
-      <app-buscar-libro></app-buscar-libro>
+      <app-noticias-aside [inputNoticias]="noticia" (noticiaToDelete)="deleteNoticia($event)"></app-noticias-aside>
+      <app-buscar-libro class="buscarlibro"></app-buscar-libro>
       <app-view-book-user [inputLibros]="libro" (libroToBorrow)="borrowLibro($event)"></app-view-book-user>
     </div>
   </div>

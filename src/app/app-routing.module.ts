@@ -27,7 +27,8 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component:AdminComponent
+    component:AdminComponent,
+    canActivate: [authGuard]
   },
   {
     path: 'home',
@@ -37,6 +38,7 @@ const routes: Routes = [
   {
     path: 'contacto',
     component: ContactoComponent,
+    canActivate: [authGuard]
   },
   {
     path: '',

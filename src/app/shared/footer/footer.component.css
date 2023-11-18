@@ -18,7 +18,7 @@
 } 
 
 #horarios h2{
-  background-image: linear-gradient(to right, yellow, darkorange);
+  background-image: linear-gradient(to right, var(--color2) ,var(--color5));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -29,9 +29,9 @@
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #d2691e;
+  color: var(--color4);
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 3rem;
   padding: 1rem; 
 }
 
@@ -44,7 +44,7 @@
   font-weight: bold;
   color: #f30000;
   text-shadow: #020202 2px 2px 2px;
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 #horarios h3 {
@@ -82,21 +82,22 @@
 /* Estilos para la direccion */
 #direccion a {
   text-decoration: none;
-  color: #d2691e;
+  color: var(--color4);
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 #direccion a:hover {
   transition-duration: 0.4s;
+  text-align: center;
   transition-timing-function: ease-in-out;
   flex-grow: 0.01;
   font-weight: bold;
-  background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+  background-image: linear-gradient(to right, var(--color2) ,var(--color5));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 
@@ -107,9 +108,9 @@
 }
 #email a{
   text-decoration: none;
-  color: #d2691e;
+  color: var(--color4);
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1rem; 
 }
 #email a:hover {
@@ -117,12 +118,12 @@
   transition-timing-function: ease-in-out;
   flex-grow: 0.01;
   font-weight: bold;
-  background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+  background-image: linear-gradient(to right, var(--color2) ,var(--color5));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   border-radius: 10%;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 /* Estilos para los íconos de redes sociales */
@@ -135,7 +136,7 @@
 
 .social a {
   margin-right: 10px;
-  background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+  background-image: linear-gradient(to right, var(--color2) ,var(--color5));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -168,3 +169,4 @@
       border: none;
   }
 }
+
