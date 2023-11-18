@@ -1,0 +1,50 @@
+.custom-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color4);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+}
+
+.custom-dialog-title {
+    font-size: 20px;
+    background-color: var(--color3);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .custom-form {
+    padding: 20px;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .form-field label {
+    font-size: 2rem; 
+    color: var(--color1); 
+}
+
+  .custom-button {
+    background-color: var(--color2);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+  }
+  
+  .custom-button:hover {
+    background-color: var(--color1)
+  }
+
+  .centered-button {
+    text-align: center;
+}

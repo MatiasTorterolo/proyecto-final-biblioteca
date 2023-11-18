@@ -191,12 +191,12 @@
       "tipoDeCuenta": "Usuario"
     },
     {
-      "id": 2,
       "nombre": "Jane",
       "apellido": "Smith",
       "email": "janesmith@example.com",
       "password": "qwerty",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Admin",
+      "id": 2
     },
     {
       "nombre": "Robert",

@@ -44,7 +44,7 @@ text-shadow: #424040e8 8px 8px 8px;
 }
 
 
-@media (max-width: 500px) { 
+@media (max-width: 800px) { 
 #contenedor-header h1 {
     font-size: 7rem;
     margin: 0rem;

@@ -1,5 +1,5 @@
 
-<div>
+<div class="custom-form-container">
     <h2 mat-dialog-title class="custom-dialog-title">Editar Libro</h2>
 
     <div mat-dialog-content>
@@ -41,7 +41,7 @@
 
             <div class="form-field">
                 <label for="description">Descripción:</label>
-                <input type="text" id="description" name="description" [value]="libro.descripcion" [(ngModel)]="libro.descripcion" required>
+                <input rows="3" type="text" id="description" name="description" [value]="libro.descripcion" [(ngModel)]="libro.descripcion" required>
             </div>
 
             <div class="form-field">
