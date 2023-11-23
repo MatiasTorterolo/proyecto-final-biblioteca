@@ -26,6 +26,8 @@ import { BuscarLibroComponent } from './shared/buscar-libro/buscar-libro.compone
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ConsultaComponent } from './components/contacto/consulta/consulta.component';
 import { ViewConsultComponent } from './components/admin/view-consult/view-consult.component';
+import { ViewReservasUserComponent } from './components/home/view-reservas-user/view-reservas-user.component';
+import { ViewReservasComponent } from './components/admin/view-reservas/view-reservas.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { ViewConsultComponent } from './components/admin/view-consult/view-consu
     BuscarLibroComponent,
     ContactoComponent,
     ConsultaComponent,
-    ViewConsultComponent
+    ViewConsultComponent,
+    ViewReservasUserComponent,
+    ViewReservasComponent
   ],
   imports: [
     BrowserModule,

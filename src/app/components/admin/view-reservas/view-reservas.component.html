@@ -1,0 +1,30 @@
+<div class="view-book-manager-container">
+    <H2 class="view-book-manager-title">LIBROS RESERVADOS</H2>
+    <table class="mi-tabla" *ngIf="usuario.reservas.length">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Género</th>
+                <th>Imagen</th>
+                <th>Descripción</th>
+                <th>Devolver</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let libro of usuario.reservas">
+                <td>{{ libro.nombre }}</td>
+                <td>{{ libro.autor }}</td>
+                <td>{{ libro.year }}</td>
+                <td>{{ libro.genero }}</td>
+                <td><img src={{libro.imagenUrl}}></td>
+                <td>{{ libro.descripcion }}</td>
+                <td><button (click)="devolver(libro)">Devolver</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div *ngIf="!usuario.reservas.length" class="view-book-manager-empty-alert">
+        <h3>No hay libros reservados</h3>
+    </div>     
+</div>

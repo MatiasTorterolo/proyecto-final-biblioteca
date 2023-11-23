@@ -45,7 +45,6 @@ export class AddBookComponent {
             break;
       }
     }
-    this.newLibro.disponibilidad = 1;
     this.libroToCreate.emit(this.newLibro);
   }
 }

@@ -1,13 +1,19 @@
+:host {
+    width: 100%;
+}
+
+.search-book-container {
+    width: 100%;
+    padding: 40px 40px;
+}
 .search-book-container__search {
     margin-bottom: 2em;
-
-
 }
 
 .search-book-container__input {
-    width: 20%;
+    width: 25%;
     border: 0.1px solid #cc8b00;
-    padding: 5px;
+    padding: 20px 20px;
     height: 20px;
     border-radius: 0.25em;
     /* put padding on the sides */
@@ -15,6 +21,8 @@
     padding-right: 10px;
     outline: none;
     color: #e8ab26;
+    position: center;
+    justify-content: center;
 }
 
 .search-book-container__input::placeholder {
@@ -47,3 +55,4 @@
 .search-borrow-button {
     margin-top: 50px;
 }
+

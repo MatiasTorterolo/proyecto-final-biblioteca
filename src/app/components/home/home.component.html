@@ -5,8 +5,8 @@
     
     <div class="principal">
       <app-noticias-aside [inputNoticias]="noticia" (noticiaToDelete)="deleteNoticia($event)"></app-noticias-aside>
-      <app-buscar-libro class="buscarlibro"></app-buscar-libro>
-      <app-view-book-user [inputLibros]="libro" (libroToBorrow)="borrowLibro($event)"></app-view-book-user>
+      <app-search-book></app-search-book>
+      
     </div>
     
     <app-footer></app-footer>

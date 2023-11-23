@@ -2,6 +2,7 @@
   <nav class="nav-principal">
     <div id="nav-usuarioNombre">{{nombreCompleto}}</div>
       <a routerLink="/home">Inicio</a>
+      <a *ngIf="!esAdmin()" routerLink="/reservas">Mis reservas</a>
       <a class="close-sesion" (click)="cerrarSesion()" role="button">Cerrar sesión</a>
       <a routerLink="/contacto">Contacto</a>
       <a *ngIf="esAdmin()"routerLink="/admin" id="tipo">Admin</a>

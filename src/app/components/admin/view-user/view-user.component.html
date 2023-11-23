@@ -10,6 +10,7 @@
             <th>Password</th>
             <th>Eliminar</th>
             <th>Editar</th>
+            <th>Reservas</th>
         </tr>
       </thead>
       <tbody>
@@ -21,6 +22,7 @@
             <td>{{ usuario.password }}</td>
             <td><button class="delete-button" (click) = "deleteUsuario(usuario.id!)">Borrar</button></td>
             <td><button class="edit-button" (click)="editUsuario(usuario)">Editar</button></td>
+            <td><button class="reservas" (click)="viewReservas(usuario.id!)">Ver reservas</button></td>
         </tr>
       </tbody>
     </table>

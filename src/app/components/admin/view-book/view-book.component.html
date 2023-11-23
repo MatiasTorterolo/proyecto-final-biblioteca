@@ -11,13 +11,12 @@
         <th>Descripción</th>
         <th>Borrar</th>
         <th>Editar</th>
-        <th>Devolver</th>
 
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let libro of inputLibros">    
-        <td [style.background]="libro.disponibilidad == 1 ? 'green' : 'red' "[style.color]="'white'">{{ libro.nombre }}</td>
+        <td [style.background]="libro.disponibilidad! > 0 ? 'green' : 'red' "[style.color]="'white'">{{ libro.nombre }}</td>
         <td>{{ libro.autor }}</td>
         <td>{{ libro.year }}</td>
         <td>{{ libro.genero }}</td>
@@ -25,7 +24,6 @@
         <td>{{ libro.descripcion }}</td>
         <td><button class="delete-button" (click) = "deleteLibro(libro.id!)">Borrar</button></td>
         <td><button class="edit-button" (click)="editLibro(libro)">Editar</button></td>
-        <td><button class="return-button" (click)= "returnLibro(libro.id!)">Devolver</button></td>
       </tr>
     </tbody>
   </table>

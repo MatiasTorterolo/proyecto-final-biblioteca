@@ -1,15 +1,16 @@
-import {IUsuarios, ILibros, INoticias, IConsultas} from "./Interface";
+import { IUsuarios, ILibros, INoticias, IConsultas } from "./Interface";
 
-export class Usuario implements IUsuarios{
-        id?: number | undefined;
-        nombre: string = '';
-        apellido: string = '';
-        email: string = '';
-        password: string = '';
-        tipoDeCuenta: string = '';
+export class Usuario implements IUsuarios {
+    id?: number | undefined;
+    nombre: string = '';
+    apellido: string = '';
+    email: string = '';
+    password: string = '';
+    tipoDeCuenta: string = '';
+    reservas: Libro[] = [];
 
 
-    constructor (usuario ? : any){
+    constructor(usuario?: any) {
 
         this.id = usuario == undefined ? null : usuario.id;
         this.nombre = usuario == undefined ? null : usuario.nombre;
@@ -18,11 +19,17 @@ export class Usuario implements IUsuarios{
         this.email = usuario == undefined ? null : usuario.email;
         this.password = usuario == undefined ? null : usuario.password;
         this.tipoDeCuenta = usuario == undefined ? null : usuario.tipoDeCuenta;
-    } 
+        this.reservas = usuario == undefined ? null : usuario.reservas;
+    }
+
+    eliminarReserva(libro: Libro) {
+        const idLibro = libro.id;
+        this.reservas = this.reservas.filter(libro => libro.id != idLibro);
+    }
 }
 
-export class Libro implements ILibros{
-   
+export class Libro implements ILibros {
+
     id: number | null = null;
     nombre: string = '';
     autor: string = '';
@@ -33,7 +40,7 @@ export class Libro implements ILibros{
     disponibilidad: number | null = null;
 
 
-    constructor (libro ? : any){
+    constructor(libro?: any) {
 
         this.id = libro == undefined ? null : libro.id;
         this.nombre = libro == undefined ? null : libro.nombre;
@@ -43,17 +50,17 @@ export class Libro implements ILibros{
         this.imagenUrl = libro == undefined ? null : libro.imagenUrl;
         this.descripcion = libro == undefined ? null : libro.descripcion;
         this.disponibilidad = libro == undefined ? null : libro.disponibilidad;
-    } 
+    }
 }
 
 export class Noticia implements INoticias {
-    
+
     id?: number | undefined;
     titulo: string = '';
     contenido: string = '';
     imagenUrl: string = '';
 
-    constructor (noticia ? : any){
+    constructor(noticia?: any) {
         this.id = noticia == undefined ? null : noticia.id;
         this.titulo = noticia == undefined ? null : noticia.titulo;
         this.contenido = noticia == undefined ? null : noticia.contenido;
@@ -62,13 +69,13 @@ export class Noticia implements INoticias {
 }
 
 export class Consulta implements IConsultas {
-    
+
     id?: number | undefined;
     titulo: string = '';
     contenido: string = '';
     email: string = '';
 
-    constructor (consulta ? : any){
+    constructor(consulta?: any) {
         this.id = consulta == undefined ? null : consulta.id;
         this.titulo = consulta == undefined ? null : consulta.titulo;
         this.contenido = consulta == undefined ? null : consulta.contenido;

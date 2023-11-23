@@ -10,19 +10,19 @@
           <th>Genero</th>
           <th>Imagen</th>
           <th>Descripción</th>
-        <th>Pedir</th>
+          <th>Pedir</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let libro of inputLibros"> 
-            <ng-container *ngIf="libro.disponibilidad == 1">
+            <ng-container *ngIf="libro.disponibilidad! >= 1">
                 <td>{{ libro.nombre }}</td>
                 <td>{{ libro.autor }}</td>
                 <td>{{ libro.year }}</td>
                 <td>{{ libro.genero }}</td>
                 <td><img src={{libro.imagenUrl}}></td>
                 <td>{{ libro.descripcion }}</td>
-                <td><button class="borrow-button" (click)= "borrowLibro(libro.id!)">Reservar</button></td>
+                <td><button class="borrow-button" (click)="agregarLibroAlArreglo(libro)">Reservar</button></td>
             </ng-container>
         </tr>
 
