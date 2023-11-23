@@ -94,7 +94,7 @@ export class RegisterComponent {
 
     if (this.loginForm.valid) {
 
-      this.usuario = { id: this.newUserId, nombre: this.loginForm.get('nombre')?.value, apellido: this.loginForm.get('apellido')?.value, email: this.loginForm.get('email')?.value, password: this.loginForm.get('confirmPassword')?.value, tipoDeCuenta: "Usuario" };
+      this.usuario = new Usuario({ id: this.newUserId, nombre: this.loginForm.get('nombre')?.value, apellido: this.loginForm.get('apellido')?.value, email: this.loginForm.get('email')?.value, password: this.loginForm.get('confirmPassword')?.value, tipoDeCuenta: "Usuario", reservas: [] });
 
       try {
 

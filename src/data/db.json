@@ -1,17 +1,17 @@
 {
   "libros": [
     {
-      "id": "3",
+      "id": 3,
       "nombre": "The Great Gatsby",
       "autor": "F. Scott Fitzgerald",
       "year": 1925,
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId3.jpg",
       "descripcion": "La historia de Jay Gatsby, un millonario excéntrico, y su obsesión por Daisy Buchanan.",
-      "disponibilidad": 0
+      "disponibilidad": 22
     },
     {
-      "id": "4",
+      "id": 4,
       "nombre": "1984",
       "autor": "George Orwell",
       "year": 1949,
@@ -21,17 +21,17 @@
       "disponibilidad": 1
     },
     {
-      "id": "5",
+      "id": 5,
       "nombre": "Pride and Prejudice",
       "autor": "Jane Austen",
       "year": 1813,
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId5.jpg",
       "descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy.",
-      "disponibilidad": 0
+      "disponibilidad": 2
     },
     {
-      "id": "6",
+      "id": 6,
       "nombre": "The Hobbit",
       "autor": "J.R.R. Tolkien",
       "year": 1937,
@@ -41,7 +41,7 @@
       "disponibilidad": 1
     },
     {
-      "id": "7",
+      "id": 7,
       "nombre": "The Chronicles of Narnia",
       "autor": "C.S. Lewis",
       "year": 1950,
@@ -51,7 +51,7 @@
       "disponibilidad": 1
     },
     {
-      "id": "8",
+      "id": 8,
       "nombre": "The Lord of the Rings",
       "autor": "J.R.R. Tolkien",
       "year": 1954,
@@ -61,7 +61,7 @@
       "disponibilidad": 1
     },
     {
-      "id": "9",
+      "id": 9,
       "nombre": "Harry Potter and the Philosopher's Stone",
       "autor": "J.K. Rowling",
       "year": 1997,
@@ -71,34 +71,34 @@
       "disponibilidad": 1
     },
     {
-      "id": "10",
+      "id": 10,
       "nombre": "The Da Vinci Code",
       "autor": "Dan Brown",
       "year": 2003,
       "genero": "Misterio",
       "imagenUrl": "../assets/imagenes/imagenId10.jpg",
       "descripcion": "La historia del simbologista Robert Langdon, quien se ve envuelto en una búsqueda de un secreto antiguo.",
-      "disponibilidad": 1
+      "disponibilidad": 2
     },
     {
-      "id": "11",
+      "id": 11,
       "nombre": "The Girl on the Train",
       "autor": "Paula Hawkins",
       "year": 2015,
       "genero": "Suspenso",
       "imagenUrl": "../assets/imagenes/imagenId11.jpg",
       "descripcion": "La historia de Rachel Watson, una mujer que se ve involucrada en la desaparición de una mujer a la que observa desde el tren.",
-      "disponibilidad": 1
+      "disponibilidad": 20
     },
     {
-      "id": "12",
+      "id": 12,
       "nombre": "Gone Girl",
       "autor": "Gillian Flynn",
       "year": 2012,
       "genero": "Suspenso",
       "imagenUrl": "../assets/imagenes/imagenId12.jpg",
       "descripcion": "La historia de Nick Dunne, un hombre cuya esposa Amy desaparece en su quinto aniversario de bodas.",
-      "disponibilidad": 1
+      "disponibilidad": 2
     },
     {
       "id": 13,
@@ -108,7 +108,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId13.jpg",
       "descripcion": "La historia de Santiago, un joven pastor que sueña con encontrar un tesoro y emprende un viaje por el desierto.",
-      "disponibilidad": 1
+      "disponibilidad": 10
     },
     {
       "id": 14,
@@ -118,7 +118,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId14.jpg",
       "descripcion": "La historia de Hazel Grace Lancaster, una adolescente con cáncer, y su relación con Augustus Waters.",
-      "disponibilidad": 1
+      "disponibilidad": 2
     },
     {
       "id": 15,
@@ -138,7 +138,7 @@
       "genero": "Ciencia ficción",
       "imagenUrl": "../assets/imagenes/imagenId16.jpg",
       "descripcion": "La historia de Beatrice Prior, una joven que vive en una sociedad dividida en facciones y debe enfrentarse a una elección que cambiará su vida.",
-      "disponibilidad": 1
+      "disponibilidad": 2
     },
     {
       "id": 17,
@@ -183,27 +183,31 @@
   ],
   "usuarios": [
     {
-      "id": 1,
       "nombre": "John",
       "apellido": "Doe",
       "email": "johndoe@example.com",
       "password": "password123",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": [],
+      "id": 1
     },
     {
+      "id": 2,
       "nombre": "Jane",
       "apellido": "Smith",
       "email": "janesmith@example.com",
       "password": "password123",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
+      "id": 3,
       "nombre": "Robert",
       "apellido": "Johnson",
       "email": "robertjohnson@example.com",
       "password": "abc123456789010",
       "tipoDeCuenta": "Usuario",
-      "id": 3
+      "reservas": []
     },
     {
       "id": 4,
@@ -211,23 +215,17 @@
       "apellido": "Davis",
       "email": "emilydavis@example.com",
       "password": "password456233443",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
-      "id": 5,
-      "nombre": "Michael",
-      "apellido": "Wilson",
-      "email": "michaelwilson@example.com",
-      "password": "password123456765543",
-      "tipoDeCuenta": "Admin"
-    },
-    {
-      "id": 6,
       "nombre": "Jessica",
       "apellido": "Taylor",
       "email": "jessicataylor@example.com",
       "password": "iloveyouorimloveyourfather",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": [],
+      "id": 6
     },
     {
       "id": 7,
@@ -235,15 +233,17 @@
       "apellido": "Anderson",
       "email": "davidanderson@example.com",
       "password": "qwerty123456578",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
+      "id": 8,
       "nombre": "Sarah",
       "apellido": "Thomas",
       "email": "sarahthomas@example.com",
       "password": "password7891234",
       "tipoDeCuenta": "Usuario",
-      "id": 8
+      "reservas": []
     },
     {
       "id": 9,
@@ -251,15 +251,17 @@
       "apellido": "Jackson",
       "email": "christopherjackson@example.com",
       "password": "abcxyzdefghijk",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
       "id": 10,
-      "nombre": "Olivia",
-      "apellido": "White",
-      "email": "oliviawhite@example.com",
-      "password": "letmeinddeeeeeee",
-      "tipoDeCuenta": "Admin"
+      "nombre": "Pepe",
+      "apellido": "Doeeee",
+      "email": "pepedoe@example.com",
+      "password": "password123",
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
       "id": 11,
@@ -267,7 +269,8 @@
       "apellido": "Harris",
       "email": "danielharris@example.com",
       "password": "password12222222",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
       "id": 12,
@@ -275,7 +278,8 @@
       "apellido": "Martin",
       "email": "sophiamartin@example.com",
       "password": "123abc22222222222222",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
       "id": 13,
@@ -283,7 +287,8 @@
       "apellido": "Thompson",
       "email": "matthewthompson@example.com",
       "password": "qazwsxaqewddsss",
-      "tipoDeCuenta": "Admin"
+      "tipoDeCuenta": "Admin",
+      "reservas": []
     },
     {
       "id": 14,
@@ -291,15 +296,17 @@
       "apellido": "Garcia",
       "email": "avagarcia@example.com",
       "password": "pass123pasapanpon",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
+      "id": 15,
       "nombre": "Andrew",
       "apellido": "Lee",
       "email": "andrewlee@example.com",
       "password": "987654",
       "tipoDeCuenta": "Admin",
-      "id": 15
+      "reservas": []
     },
     {
       "id": 16,
@@ -307,7 +314,8 @@
       "apellido": "Clark",
       "email": "isabellaclark@example.com",
       "password": "hello12355454333",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
       "id": 17,
@@ -315,15 +323,17 @@
       "apellido": "Rodriguez",
       "email": "ethanrodriguez@example.com",
       "password": "qwertyuio222222p",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
+      "id": 18,
       "nombre": "Mia",
       "apellido": "Lopez",
       "email": "mialopez@example.com",
       "password": "ilovemusicilikeit",
       "tipoDeCuenta": "Usuario",
-      "id": 18
+      "reservas": []
     },
     {
       "id": 19,
@@ -331,7 +341,8 @@
       "apellido": "Hall",
       "email": "jameshall@example.com",
       "password": "password2assdwwww",
-      "tipoDeCuenta": "Usuario"
+      "tipoDeCuenta": "Usuario",
+      "reservas": []
     },
     {
       "id": 20,
@@ -339,15 +350,17 @@
       "apellido": "Young",
       "email": "charlotteyoung@example.com",
       "password": "zxcvbnmadw232211",
-      "tipoDeCuenta": "Admin"
+      "tipoDeCuenta": "Admin",
+      "reservas": []
     },
     {
+      "id": 21,
       "nombre": "Guillermo",
       "apellido": "Lorenzo",
       "email": "guille@gmail.com",
       "password": "12345guille",
       "tipoDeCuenta": "Admin",
-      "id": 22
+      "reservas": []
     }
   ],
   "noticias": [

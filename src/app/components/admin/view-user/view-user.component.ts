@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Usuario } from 'src/app/core/Models';
 
 @Component({
@@ -12,7 +13,7 @@ export class ViewUserComponent {
   @Output() usuarioToDelete: EventEmitter<number> = new EventEmitter();
   @Output() usuarioToEdit: EventEmitter<Usuario> = new EventEmitter();
 
-
+  constructor(private router: Router) { }
 
   public deleteUsuario(id: number){
     this.usuarioToDelete.emit(id);
@@ -20,5 +21,9 @@ export class ViewUserComponent {
 
   public editUsuario(usuario: Usuario){
     this.usuarioToEdit.emit(usuario);
+  }
+
+  public viewReservas(userId: number){
+    this.router.navigate(['/reservasTotales'], {state: {userId}});
   }
 }

@@ -18,6 +18,7 @@ export interface IUsuarios{
     email: string;
     password: string;
     tipoDeCuenta: string;
+    reservas: ILibros[];
 }
 
 export interface INoticias{

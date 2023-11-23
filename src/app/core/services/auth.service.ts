@@ -75,7 +75,7 @@ export class AuthService {
   }
 
   public getUserToken(): number {
-      return Number(localStorage.getItem('token'))
+      return Number(localStorage.getItem('token'));
   }
 
   public isAuthorized(): boolean{

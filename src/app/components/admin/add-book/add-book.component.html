@@ -19,7 +19,7 @@
       </div>
   
       <div class="form-field">
-        <label for="gender">Genero:</label>
+        <label for="gender">Género:</label>
         <select name="gender" id="gender" [value]="newLibro.genero" [(ngModel)]="newLibro.genero" required>
           <option value="Suspenso">Suspenso</option>
           <option value="Novela">Novela</option>
@@ -45,8 +45,13 @@
       </div>
 
       <div class="form-field">
-        <label for="description">Descripcion:</label>
+        <label for="description">Descripción:</label>
         <input type="text" id="description" name="description" [(ngModel)]="newLibro.descripcion" required>
+      </div>
+
+      <div class="form-field">
+        <label for="disponibilidad">Disponibilidad:</label>
+        <input type="number" id="disponibilidad" name="disponibilidad" [(ngModel)]="newLibro.disponibilidad" required>
       </div>
   
       <button class="login-button create-button" type="submit">Crear Libro</button>
