@@ -15,17 +15,18 @@
 
 .contenido-nosotros p{
 
-    color: #ffffff; /* Color de texto normal */
+    color: #ffffff; 
     font-size: 2rem;
     text-align: left;
 }
 .contenido-nosotros h3{
-    color: #d2691e; /* Color de texto normal */
+    color: #d2691e; 
     text-align:left;
     font-size: 3rem;
 }
 .contenido-nosotros {
-
+    display: flex;
+    flex-direction: row;
     grid-template-columns: 1fr 2fr;
     grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
     column-gap: 4rem;
@@ -34,9 +35,7 @@
      text-align: center;
    
 }
-.noti2 h2{
-    
-}
+
 .cuadro-noticia{
     margin-top: 20px;
     margin-bottom: 20px;

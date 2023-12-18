@@ -18,7 +18,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId4.jpg",
       "descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId7.jpg",
       "descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": 8,
@@ -304,7 +304,7 @@
       "nombre": "Andrew",
       "apellido": "Lee",
       "email": "andrewlee@example.com",
-      "password": "987654",
+      "password": "987654321",
       "tipoDeCuenta": "Admin",
       "reservas": []
     },
@@ -336,13 +336,34 @@
       "reservas": []
     },
     {
-      "id": 19,
       "nombre": "James",
       "apellido": "Hall",
       "email": "jameshall@example.com",
       "password": "password2assdwwww",
       "tipoDeCuenta": "Usuario",
-      "reservas": []
+      "reservas": [
+        {
+          "id": 4,
+          "nombre": "1984",
+          "autor": "George Orwell",
+          "year": 1949,
+          "genero": "Novela",
+          "imagenUrl": "../assets/imagenes/imagenId4.jpg",
+          "descripcion": "La historia de Winston Smith, un hombre que vive en una sociedad distópica gobernada por un partido totalitario.",
+          "disponibilidad": 1
+        },
+        {
+          "id": 7,
+          "nombre": "The Chronicles of Narnia",
+          "autor": "C.S. Lewis",
+          "year": 1950,
+          "genero": "Fantasía",
+          "imagenUrl": "../assets/imagenes/imagenId7.jpg",
+          "descripcion": "La historia de un grupo de niños que descubren un mundo mágico a través de un armario.",
+          "disponibilidad": 1
+        }
+      ],
+      "id": 19
     },
     {
       "id": 20,

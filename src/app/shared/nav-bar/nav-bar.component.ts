@@ -17,6 +17,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     // Lógica para obtener el nombre del usuario
     const usuario = this.authservice.getUsuario();
+    localStorage.setItem('usuario', JSON.stringify(usuario));
 
     if (usuario && usuario.nombre && usuario.apellido) {
       this.nombreCompleto = `${usuario.nombre} ${usuario.apellido}`;
@@ -44,7 +45,6 @@ export class NavBarComponent implements OnInit {
 
       window.addEventListener('scroll', fijarBarraNavegacion);
 
-      // También puedes llamar a la función una vez en la inicialización
       fijarBarraNavegacion();
     }
   }

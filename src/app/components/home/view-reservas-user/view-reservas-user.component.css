@@ -87,11 +87,16 @@ tbody tr:hover {
     color: red;
 }
 
-.view-book-manager-empty-alert a{
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: red;
     font-weight: bold;
 }
 
-.view-book-manager-empty-alert a:hover{
+a:hover{
     cursor: pointer;
     text-decoration: underline;
     font-weight: bold;
