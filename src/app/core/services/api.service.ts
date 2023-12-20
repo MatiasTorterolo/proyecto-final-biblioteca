@@ -19,7 +19,7 @@ export class APIService {
   constructor(private http: HttpClient) { }
 
   getNextId(): Observable<number> {
-    return this.http.get<Usuario[]>(`${this.url}/usuarios`).pipe(map(data => data.length + 1));
+    return this.http.get<Usuario[]>(`${this.url}/usuarios`).pipe(map(data => data[data.length].id! + 1));
   }
 
   getUsuarios(): Observable<Usuario[]> {
