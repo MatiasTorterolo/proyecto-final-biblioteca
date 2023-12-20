@@ -10,11 +10,10 @@
                  <h2 class="notih2">Noticia destacada: </h2> 
                  <h3>{{ noticia.titulo }}</h3> 
                  <p>{{ noticia.contenido }}</p>
-                </div>
-                <div *ngIf="isAdminPage()">
+                 <div *ngIf="isAdminPage()">
                   <button class="delete-button" (click) = "deleteNoticia(noticia.id!)">Borrar</button>
                 </div>
-
+                </div>
       </div> 
   </div>
 </body>
