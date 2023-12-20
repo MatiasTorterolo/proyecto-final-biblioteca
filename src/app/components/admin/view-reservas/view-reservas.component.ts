@@ -1,5 +1,6 @@
 import { LocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Libro, Usuario } from 'src/app/core/Models';
 import { APIService } from 'src/app/core/services/api.service';
 import { AuthService } from 'src/app/core/services/auth.service';
@@ -19,7 +20,7 @@ export class ViewReservasComponent implements OnInit {
 
   usuario: Usuario = new Usuario();
 
-  constructor(private apiService: APIService, private location: LocationStrategy, private authService: AuthService) { }
+  constructor(private apiService: APIService, private location: LocationStrategy, private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     const routeState = this.location.getState() as RouteState;
@@ -48,6 +49,10 @@ export class ViewReservasComponent implements OnInit {
         error: () => alert("No se ha podido cancelar la reserva")
       })
     })
+  }
+
+  navigateToAdmin() {
+    return this.router.navigate(['/admin']);
   }
 
 }
