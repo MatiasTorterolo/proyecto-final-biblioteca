@@ -28,7 +28,7 @@
       "genero": "Novela",
       "imagenUrl": "../assets/imagenes/imagenId5.jpg",
       "descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy.",
-      "disponibilidad": 2
+      "disponibilidad": 1
     },
     {
       "id": 6,
@@ -38,7 +38,7 @@
       "genero": "Fantasía",
       "imagenUrl": "../assets/imagenes/imagenId6.jpg",
       "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug.",
-      "disponibilidad": 1
+      "disponibilidad": 0
     },
     {
       "id": 7,
@@ -198,7 +198,28 @@
       "email": "janesmith@example.com",
       "password": "password123",
       "tipoDeCuenta": "Usuario",
-      "reservas": []
+      "reservas": [
+        {
+          "id": 5,
+          "nombre": "Pride and Prejudice",
+          "autor": "Jane Austen",
+          "year": 1813,
+          "genero": "Novela",
+          "imagenUrl": "../assets/imagenes/imagenId5.jpg",
+          "descripcion": "La historia de Elizabeth Bennet, una joven ingeniosa y de carácter fuerte, y su relación con el orgulloso y prejuicioso Sr. Darcy.",
+          "disponibilidad": 2
+        },
+        {
+          "id": 6,
+          "nombre": "The Hobbit",
+          "autor": "J.R.R. Tolkien",
+          "year": 1937,
+          "genero": "Fantasía",
+          "imagenUrl": "../assets/imagenes/imagenId6.jpg",
+          "descripcion": "La historia de Bilbo Bolsón, un hobbit que se embarca en una aventura para recuperar un tesoro robado por el dragón Smaug.",
+          "disponibilidad": 1
+        }
+      ]
     },
     {
       "id": 3,
@@ -392,14 +413,14 @@
       "id": 2
     },
     {
-      "titulo": "cancelamos el local",
-      "contenido": "Lamentablemente, debido a desafíos económicos, la prestigiosa editorial se ve obligada a cerrar sus puertas. Su contribución invaluable al mundo de la literatura y la cultura deja un vacío significativo en la industria editorial. Agradecemos su legado y esperamos que el cierre sea solo un capítulo temporal en la historia literaria.",
+      "titulo": "Cancelamos el local",
+      "contenido": "La Biblioteca Páginas Perdidas, icónica por décadas en el corazón de la ciudad, cierra sus puertas debido a desafíos financieros. Los amantes de la lectura lamentan la pérdida de este refugio literario, mientras la comunidad busca soluciones para preservar su invaluable legado cultural.",
       "imagenUrl": "../assets/imagenes/1predeterminado.png",
       "id": 3
     },
     {
-      "titulo": "Felicitaciones",
-      "contenido": "Lamentablemente, debido a desafíos económicos, la prestigiosa editorial se ve obligada a cerrar sus puertas. Su contribución invaluable al mundo de la literatura y la cultura deja un vacío significativo en la industria editorial. Agradecemos su legado y esperamos que el cierre sea solo un capítulo temporal en la historia literaria.",
+      "titulo": "Nuevo Lanzamiento",
+      "contenido": "Hoy, la aclamada autora Ana Martínez revela su último tesoro literario, 'Sombras en el Crepúsculo'. Con una trama envolvente y personajes inolvidables, este libro promete cautivar a lectores ávidos de emociones. La espera ha terminado para los seguidores ansiosos de Martínez.",
       "imagenUrl": "../assets/imagenes/1predeterminado.png",
       "id": 4
     }
